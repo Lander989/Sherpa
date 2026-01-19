@@ -19,9 +19,12 @@ Hierop wilden wij inspelen door een oplossing te ontwikkelen die hen hierin onde
 </p>
 
 ## Introductie
-Max 300 woorden.
-Kader je project. Introduceer het probleem en jouw doelstellingen (inclusief boundary conditions).
-Maak gebruik van bronverwijzingen ([zie APA stijl](https://www.scribbr.nl/category/apa-stijl/)). Zoals bijvoorbeeld (Thomas & Ritter, 2022) [^1] .
+
+De snelle digitalisering van de samenleving biedt kansen, maar creëert ook het risico dat personen met een visuele beperking worden uitgesloten wanneer interfaces niet toegankelijk zijn (Abdelkhalek, 2019)[^1]. Hoewel er diverse navigatiehulpmiddelen bestaan, blijft autonome navigatie in een veranderlijke omgeving een grote opgave. Het continu verwerken van complexe omgevingsinformatie vergt vaak een extreem hoge cognitieve inspanning, wat leidt tot mentale vermoeidheid en onzekerheid bij de gebruiker (Brayda et al., 2018)[^2].
+
+Het doel van dit project is de ontwikkeling van een intuïtief hulpmiddel dat blinde personen ondersteunt bij het aanleren en onderhouden van trajecten. De focus ligt hierbij niet louter op het bereiken van een bestemming, maar op het bieden van context en geruststelling tijdens de verplaatsing. Door de mentale belasting (cognitive load) te minimaliseren, willen we de autonomie en het zelfvertrouwen van de gebruiker vergroten, zodat zij zich veiliger voelen in de openbare ruimte.
+
+Een cruciale randvoorwaarde is dat de oplossing functioneert als aanvulling op de witte stok, specifiek voor buitengebruik (outdoor navigation). Het ontwerp moet blindelings en met één hand bedienbaar zijn, zodat het gehoor vrij blijft en de fysieke veiligheid van de gebruiker te allen tijde gewaarborgd is.
 
 ## Inhoudstafel
 
@@ -42,7 +45,7 @@ Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoa
 
 
 ## Noot inzake het gebruik van AI
-In semester 1 werd geen gebruikgemaakt van enige AI-functie, zowel in de documentatie als in het project zelf.
+In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestanden te transcriberen en ChatGPT voor de analyse. Gemini en chatgpt werden gebruikt om de documentatie in github in te korten en vlotter te maken. Corbin gebruikte geen AI, zowel voor de documentatie als het project.
 
 ## Bijlagen
 ### Discovery
@@ -92,4 +95,7 @@ This repository contains both software and design materials created as part of a
 You are free to reuse and build upon this work, both commercially and non-commercially, as long as proper attribution is given to the original authors.
 
 ## Bronnen
- [^1]: Thomas, T., & Ritter, A. (2022). Wandering & sundowning in dementia. _Practical Neurology, 21_(3), 36–44.
+ [^1]:Abdelkhalek, M. (2019). Final Year Project Report - Blind Pad. University of Bath
+
+ [^2]:Brayda, L. et al. (2018). Updated Tactile Feedback with a Pin Array Matrix. Micromachines, 9(7), 351
+
