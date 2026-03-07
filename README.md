@@ -36,6 +36,7 @@ Een cruciale randvoorwaarde is dat de oplossing functioneert als aanvulling op d
 3. [Defintion](./docs/definition.md)
 4. [Design Requirements](./docs/design_requirements.md)
 5. [Bill of materials](./docs/bom.md)
+6. [develop](./docs/develop.md)
 
 ## Kritische reflectie
 Semester 1:
