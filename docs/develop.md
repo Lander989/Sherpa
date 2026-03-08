@@ -23,6 +23,7 @@ Dit zijn de componenten die moeten werken om het product werkende te krijgen en 
 •	Het product moet via gps-tracking de locatie van de gebruiker kunnen ophalen
 •	Het product moet een afgelegde weg kunnen opnemen en opslaan in een databank.
 •	Het product moet dit opgeslagen traject terug kunnen weergeven aan de gebruiker
+#### resultaten
 
 #### Design requierments
 De design requierments die uit deze testen voort kwamen waren : 
