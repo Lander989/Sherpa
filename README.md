@@ -90,7 +90,7 @@ In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestand
 ### develop
 * User testing deel 1 (N=5)
   * [protocol](<./reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
-  * [rapport](<./>)
+  * [rapport](<./reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 
 ## Licentie
 

@@ -10,7 +10,7 @@ Bij het eerste deel van de develop fase zijn we terug gaan uitzoomen en hebben w
 Voor alle testten werd opnieuw een protocol en rapport opgesteld.
 
 * [protocol](<./reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
-* [rapport](<./reports and protocols/rapport_Deelopdracht 3 develop 1.pdf>)
+* [rapport](<./reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 
 Er werd voor ons product ook een productarchitectuur opgesteld. Hierin is te zien welke keuzes we nog kunnen maken in het designproces. Ook worden de functies gelinkt aan de nodige componenten.
 
