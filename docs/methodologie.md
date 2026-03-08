@@ -2,7 +2,7 @@
 Dit project volgt de principes van Human-Centered Design binnen het Triple Diamond-model. In dit eerste semester doorliepen we de fasen Discover en Define.
 
 <p align="center">
-  <img src="img\template_tijdlijn_visual.jpeg" width="50%">
+  <img src="../img/0d43b80a-0594-4a19-9843-937068339654.jpg" width="100%">
 </p>
 
 ### Discover: Problem Finding
