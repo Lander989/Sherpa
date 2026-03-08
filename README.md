@@ -17,7 +17,7 @@ Onze oplossing is een intuïtief navigatietoestel met een fysiek draaibare pijl,
 Tijdens het wandelen wijst de pijl continu de juiste richting aan. Hierdoor hoeft de gebruiker geen complexe instructies te verwerken. Het toestel biedt een voelbaar en constant oriëntatiepunt, wat zorgt voor mentale rust en meer zelfvertrouwen, zonder het gehoor te blokkeren.
 
 <p align="center">
-  <img src="img/Tactile GPS.jpg" width="100%">
+  <img src="img\ChatGPT_pijl_protoype.jpg" width="100%">
 </p>
 
 ## Introductie
@@ -90,7 +90,8 @@ In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestand
 
 ### develop
 * User testing deel 1 (N=5)
-  *[protocol](<./>)
+  * [protocol](<./reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
+  * [rapport](<./>)
 
 ## Licentie
 
