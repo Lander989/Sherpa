@@ -1,30 +1,20 @@
-| Nummer | Features/goals                                                       | Bron              |
-|--------|----------------------------------------------------------------------|-------------------|
-| 1      | Navigatie (functie)                                                  |                   |
-| 1.1    | aangeleerde trajecten onderhouden                                    | Discovery         |
-| 1.2    | Nieuwe trajecten aanleren                                            | Discovery         |
-| 1.3    | Feedback bij gevaarlijke locaties                                    | Discovery         |
-| 1.4    | Orientatie weergeven                                                 | Discovery         |
-| 1.5    | Verwarring bij start  van traject vermijden                          | Definition wave 2 |
-| 1.6    | Gebruiker kan zijn eigen herkennigspunten maken                      | Definition wave 2 |
-| 2      | Gebruiksgemak (usability)                                            |                   |
-| 2.1    | gebruiker moet zonder verwarring een traject kunnen afwandelen       | Discovery         |
-| 2.2    | Cognitieve belasting laag houden, gebruikers kunnen intuitief volgen | definition  wave1 |
-| 2.3    | bruikbaar na een uitlegsessie                                        | definition  wave1 |
-| 2.4    | UI geschikt voor slechtzienden en blinden                            | Discovery         |
-| 2.5    | Oplaadstation                                                        | definition        |
-| 2.6    | De bedieningsknoppen moeten een voelbare range hebben                | definition  wave1 |
-| 2.7    | Docking station waar het product kan laden en een vaste plaats heeft | definition  wave1 |
-| 2.8    | Het product moet met 1 hand bruikbaar zijn                           | definition wave 1 |
-| 2.9    | Contrast en kleur aanpasbaar aan voorkeur van gebruiker              | definition wave 1 |
-| 3      | Betrouwbaarheid (usability)                                          |                   |
-| 3.1    | Toestel moet in eerder welke opstelling werken                       | Definition wave 2 |
-| 3.2    | Moet volledig het traject actief blijven (batterij levensduur)       | Definition wave 1 |
-| 3.3    | Toestel moet weten wanneer het mist en dit signaliseren              | definition wave 2 |
-| 3.4    |                                                                      |                   |
-| 4      | UX                                                                   |                   |
-| 4,1    | Zelfvertrouwen versterken                                            | Discovery         |
-| 5      | Technisch                                                            |                   |
-| 5.1    | Mobiele vormfactor                                                   | Discovery         |
-| 5.2    | Docking station om op te laden                                       | Discovery         |
-| 5.3    | Compatibel met IOS                                                   | definition wave 2 |
+| ID  | Feature / Goal                                                | Source            | Priority    | Completed | Measurement       | Success Metric |
+| --- | ------------------------------------------------------------- | ----------------- | ----------- | --------- | ----------------- | -------------- |
+| 1   | **Navigation (Function)**                                     |                   |             |           |                   |                |
+| 1.1 | Maintain learned routes                                       | Discovery         | Must have   |           | Usability testing |                |
+| 1.2 | Learn new routes                                              | Discovery         | Must have   |           | Usability testing |                |
+| 1.3 | Provide feedback at dangerous locations                       | Discovery         | Must have   | ✓         | Usability testing |                |
+| 1.4 | Display orientation                                           | Discovery         | Must have   |           | QAP               |                |
+| 1.5 | Avoid confusion when starting a route                         | Definition wave 2 | Should have |           | Usability testing |                |
+| 1.6 | User can create their own landmarks                           | Definition wave 2 | Should have |           |                   |                |
+| 2   | **Ease of Use (Usability)**                                   |                   |             |           |                   |                |
+| 2.1 | User must be able to start a route without confusion          | Discovery         | Must have   |           | Usability testing |                |
+| 2.2 | Keep cognitive load low so users can focus on surroundings    | Definition wave 1 | Must have   |           |                   |                |
+| 2.3 | Usable after a single explanation session                     | Definition wave 1 | Should have |           |                   |                |
+| 2.4 | UI suitable for visually impaired and blind users             | Discovery         | Must have   |           |                   |                |
+| 2.5 | Control buttons must have a tactile range                     | Definition wave 1 | Should have |           |                   |                |
+| 2.6 | Product must be usable with one hand                          | Definition wave 1 | Should have |           |                   |                |
+| 2.7 | Contrast and color adjustable to user preference              | Definition wave 1 | Could have  |           |                   |                |
+| 3   | **Reliability (Usability)**                                   |                   |             |           |                   |                |
+| 3.1 | Device must work in any orientation/setup                     | Definition wave 2 | Should have |           |                   |                |
+| 3.2 | Must remain active for the entire route (battery reliability) | Definition wave 1 | Must have   |           |                   |                |
