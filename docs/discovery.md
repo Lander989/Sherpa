@@ -112,6 +112,9 @@ Dit inzicht werd onder meer geïllustreerd door het verhaal van Pieter-Jan, die 
 
 Op basis van dit inzicht creeëren we De "How Might We" vraag:
 >'Hoe kunnen we blinde personen ondersteunen bij het aanleren en onderhouden van trajecten?'
+<p align="center">
+  <img src="img/Tactile GPS.jpg" width="80%">
+</p>
 
 Als eerste conceptuele richting ontstond het idee van een tactiel navigatiesysteem, een soort van "tactiele gps". Met dit concept starten we de definitie fase.
 
