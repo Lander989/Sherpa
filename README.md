@@ -1,4 +1,4 @@
-# Projecttitel
+# SHERPA
 *Tactiele GPS: een navigatiesysteem voor blinden dat hen tijdens hun traject begeleidt aan de hand van tactiele snapshots van de omgeving.* 
 
 🛠️ Built by ``Corbin Breakevelt`` & ``Lander Dumont`` & ``Roland Derynck``    
@@ -8,11 +8,13 @@
 *Dag/Maand/Jaar van de laatste update*   
 
 ## Samenvatting
-In de eerste fase van dit project hebben we de wereld van blinden leren kennen. We bezochten een blindenbeurs en gingen in gesprek met mensen met een visuele beperking. Daarbij spraken we over uiteenlopende onderwerpen en verzamelden we veel inzichten.
+Personen met een visuele beperking ervaren vaak onzekerheid tijdens het navigeren. Huidige hulpmiddelen zoals spraak-GPS vragen veel concentratie (hoge cognitieve belasting), terwijl de gebruiker vooral behoefte heeft aan geruststelling en context op aangeleerde trajecten.
 
-Een van de belangrijkste observaties die we deden, is de manier waarop blinden zich verplaatsen. We merkten dat zij vaak afhankelijk zijn van aangeleerde trajecten. Deze routes leren zij stap voor stap aan, en na voldoende training kunnen ze deze zelfstandig afleggen.
+Dit probleem hebben wij onderzocht via het Double Diamond-model. Na veldonderzoek (Brailletech) en interviews bleek uit onze testen met een tactiele kaart (wave 1) dat complexe informatie tijdens het wandelen niet werkt. Dit inzicht leidde tot een cruciale pivot.
 
-Hierop wilden wij inspelen door een oplossing te ontwikkelen die hen hierin ondersteunt. Dit doen we aan de hand van een tactiele GPS. Met behulp van een braillescherm of pin-matrix kunnen blinden een tactiele ‘snapshot’ van hun omgeving voelen. Op die manier kunnen zij de omgeving op een voelbare manier begrijpen. Waar conventionele hulpmiddelen vaak enkel gefocust zijn op de exacte route, biedt dit hulpmiddel een breder beeld van de omgeving.
+Onze oplossing is een intuïtief navigatietoestel met een fysiek draaibare pijl, gebaseerd op het ‘Record & Replay’-principe. De gebruiker (of een begeleider) neemt een route eenmalig op, waarna het toestel deze opslaat.
+
+Tijdens het wandelen wijst de pijl continu de juiste richting aan. Hierdoor hoeft de gebruiker geen complexe instructies te verwerken. Het toestel biedt een voelbaar en constant oriëntatiepunt, wat zorgt voor mentale rust en meer zelfvertrouwen, zonder het gehoor te blokkeren.
 
 <p align="center">
   <img src="img/Tactile GPS.jpg" width="100%">
@@ -40,7 +42,7 @@ Semester 1:
 
 Als we terugkijken op het proces van het eerste semester, was de keuze om te pivoten van de tactiele matrix naar de pijl zonder twijfel het kantelpunt. We hebben in het begin veel tijd gestoken in het matrix-concept, om er tijdens de Think Aloud-testen achter te komen dat dit cognitief veel te zwaar was voor de gebruiker. Deze validatieslag was cruciaal om te beseffen dat de gebruiker eigenlijk geen kaart wil ontcijferen, maar vooral op zoek is naar geruststelling en eenvoudige richting.
 
-Toch moeten we kritisch zijn op onze validatie in de laatste fase. De Wizard of Oz-methode in Wave 2 was perfect om het gevoel van de pijl te testen, maar het verhult de technische realiteit. Omdat wij zelf de pijl bestuurden, hielden we geen rekening met factoren zoals GPS-signaalverlies of onnauwkeurigheid in een stedelijke omgeving. We hebben dus wel de gebruikerservaring (UX) gevalideerd, maar de technische haalbaarheid is een risico dat we doorschuiven naar het volgende semester.
+Toch moeten we kritisch zijn op onze validatie in de laatste fase. De Wizard of Oz-methode in wave 2 was perfect om het gevoel van de pijl te testen, maar het verhult de technische realiteit. Omdat wij zelf de pijl bestuurden, hielden we geen rekening met factoren zoals GPS-signaalverlies of onnauwkeurigheid in een stedelijke omgeving. We hebben dus wel de gebruikerservaring (UX) gevalideerd, maar de technische haalbaarheid is een risico dat we doorschuiven naar het volgende semester.
 
 Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoals Pieter-Jan, zijn al erg zelfstandig en mobiel. Hierdoor bestaat het risico dat we een oplossing hebben ontworpen voor een ‘best-case scenario’. Het is voor ons een belangrijk werkpunt om in de toekomst te testen met mensen die onzekerder zijn in het verkeer, om te zien of het ‘Record & Replay’-concept hen ook voldoende vertrouwen biedt.
 
