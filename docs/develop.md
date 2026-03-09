@@ -1,6 +1,6 @@
-## develop
+## Develop
 
-### deel 1 (N=5)
+### Deel 1 (N=5)
 Inleiding
 In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele architectuur. Door het product op te splitsen in verschillende deelaspecten ontstaat meer inzicht in hoe het systeem zal werken en welke onderdelen nodig zijn. Daarnaast worden er testen uitgevoerd samen met de doelgroep om de onderzoeksvragen te beantwoorden.
 #### Onderzoeksvragen
@@ -41,13 +41,11 @@ De focus lag in deze fase bij het uitwerken van de wijzer. Hierbij werd vertrokk
   <img src="../img/overzicht prototypes.png" width="100%">
 </p>
 
-Voor alle testen werd opnieuw een protocol en rapport opgesteld.
-
-* [protocol](<../reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
-* [rapport](<../reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 
 #### User testing
 Voor de testen werd een protocol en rapport opgesteld. Deze zijn hier te lezen.
+* [protocol](<../reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
+* [rapport](<../reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 #### Doel van de testen
 Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten (variërend van volledig blind tot restvisus) om:
 
