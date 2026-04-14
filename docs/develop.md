@@ -99,8 +99,9 @@ Met de beste prototypes (driehoek en draaiwijzer) werd een wandelparcours met bo
 
 
 Tijdens een van de testen werd volgende opmerking gegeven:
->Chris: "Kom maar eens mee naar het Citadelpark, ik vind daar toch nooit mijn weg terug".
+>Chris: "Kom maar eens mee naar het Citadelpark, dan vind ik Misschien wel mijn weg terug".
 
+Wat aantoont dat de persoon vertrouwen heeft in het toestel.
 
 
 ### Test 3 – Vibratiefeedback
