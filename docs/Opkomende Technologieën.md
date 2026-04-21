@@ -18,7 +18,7 @@ Productdoelstellingen:
 5. Het systeem vereist minimale training en mentale inspanning
 
 <p align="right">
-  <img src="img\ChatGPT_pijl_protoype.jpg" width="100%">
+  <img src="../img\ChatGPT_pijl_protoype.jpg" width="100%">
 </p>
 
 Dit heeft zich kortweg vertaald naar een mobiel navigatiesyteem dat met een wijzer de weg wijst doorheen een opgenomen traject. Op deze wijze wordt een blinde van punt naar punt doorheen de veiligste weg geleid. Hierover valt uitgebreid te lezen in GGO portie van deze github.
@@ -41,8 +41,8 @@ Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
 - Op afstand het systeem uitlezen en de data weergeven op een HMI: Connectiviteit wifi/bluethoot, dashbord waar data weergegeven wordt om troubleshooting te bevorderen.
 
 ### IMU
-De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: Hoe weet de wijzer naar waar hij moet wijzen? Volgende afbeelding illustreet hoe de hoek bepaald wordt.
+De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: Hoe weet de wijzer naar waar hij moet wijzen? Volgende afbeelding illustreert hoe de hoek bepaald wordt.
 
 <p align="center">
-  <img src="img/illustratie_wijzerrichting.png" width="100%">
+  <img src="../img/Illustratie_hoeken_wijzer.png" width="50%">
 </p>
