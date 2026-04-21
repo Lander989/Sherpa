@@ -72,6 +72,7 @@ Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten (v
 
 
 
+
 #### Opzet
 Proefpersonen stonden in het midden van een cirkel (ingedeeld in sectoren van 30°). Drie prototypes (driehoek, draaiwijzer, schijf met balk) werden draadloos aangestuurd. De gebruiker voelde de stand, draaide zich naar de vermeende richting en wees met een witte stok. De afwijking werd geregistreerd.
 
