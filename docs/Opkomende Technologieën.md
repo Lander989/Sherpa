@@ -41,8 +41,20 @@ Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
 - Op afstand het systeem uitlezen en de data weergeven op een HMI: Connectiviteit wifi/bluethoot, dashbord waar data weergegeven wordt om troubleshooting te bevorderen.
 
 ### IMU
-De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: Hoe weet de wijzer naar waar hij moet wijzen? Volgende afbeelding illustreert hoe de hoek bepaald wordt.
+#### Concept
+De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: Hoe weet de wijzer naar waar hij moet wijzen? Volgende afbeelding illustreert hoe de hoek bepaald wordt. Het magnetisch noorder dient als nullijn. wijzersin loopt de hoek van 0 tot 360 graden op. Soms komt [0,180] en [-180,0] voor in de berekeningen. Onthoud dat de heading en bearing altijd genormaliseerd worden naar een waarde tussen de 0 en 360 graden. Het verschil tussen de heading en bearing noemen we delta. Met delta kan teta gevonden worden. Teta stuurt de hoek van de servo.
 
 <p align="center">
   <img src="../img/Illustratie_hoeken_wijzer.png" width="50%">
+</p>
+
+#### Onderdelen en schakeling
+We maken gebruik van een grove 9dof IMU. Deze sensor bevat een accelerometer, gyrometer en magnetometer. 
+#### IMU uitlezen
+De meegeleverde voorbeeld code uit de bibliotheek is onbruikbaar, deze bevat geen tilt compensatie en sensor fusion. Volgdende instructables post gebruiken we als basis om onze sensoren uit te lezen en om te zetten in nuttige informatie
+
+>https://www.instructables.com/Tilt-Compensated-Compass/
+
+<p align="center">
+  <img src="../img/Schakeling.png" width="100%">
 </p>
