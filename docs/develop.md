@@ -150,7 +150,7 @@ Om het verloop van deze fase lichter te maken werden de ontwerpen van de prototy
 Als eerst stap werd er gekeeken naar bestaande producten. Deze werden beschreven en bestudeerd een een benchmark fase.
 Vervolgens werden de nodige inputs gemapt aan verschillende button layouts. Daarna werd online gekeeken naar bstaande onderzoeken rond ergonomie, hooftzakenlijk rond de hand.
 Alle bevindingen werden neergeschreven in een ondrzoeks rapport, hier te zijn.
-
+* [rapport](<../>)
 
 
 
@@ -167,6 +167,10 @@ voor de testen met de doelgroep werden een protokol en rappert geschreven. deze 
 ---
 ###  Bronnen
 * Liu, G., Yu, T., Yu, C., Xu, H., Xu, S., Yang, C., Wang, F., Mi, H., & Shi, Y., Tactile Compass: Enabling Visually Impaired People to Follow a Path with Continuous Directional Feedback, CHI Conference on Human Factors in Computing Systems, 2021. https://doi.org/10.1145/3411764.3445644
+
+* DJI RC Motion 3 - Motion Control, Easy ACRO - DJI United States. (n.d.). DJI. https://www.dji.com/be/rc-motion-3
+* Genshin Impact Limited Edition DualSense Controller | PS5. (n.d.). [Video]. PlayStation. https://www.playstation.com/en-hk/accessories/dualsense-wireless-controller/
+* Wikipedia contributors. (2026b, April 24). Wii Remote. Wikipedia. https://en.wikipedia.org/wiki/Wii_Remote
 
 * González, A. G. (2018). An ergonomic customized-tool handle design for precision tools using additive manufacturing: A case study. Applied Sciences. Opgehaald van doi.org: https://doi.org/10.3390/app8071200
 
