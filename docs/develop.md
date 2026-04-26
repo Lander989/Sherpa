@@ -126,6 +126,13 @@ ID   |                                                                          
 | 4.3  | De trilpatronen volgen de bestaande en vertrouwde tactiele semantiek van blindengeleidetegels                          | Develop 1  |
 
 --- 
+## Deel 2 (N=2)
+Inlieding
+In deze fase worden zowel de ergonomie van de controller onderzocht als de nodige knoppen en de plaats van deze knoppen op het product.
+Aan de hand van voor onderzoek en het raadplegen van bestaande studies werden verschillende prototypes van het product gerealiseerd. Deze prototypes werden dan getest bij de doelgroep.
+
+### onderzoeksvragen
+---
 
 ###  Bronnen
 Liu, G., Yu, T., Yu, C., Xu, H., Xu, S., Yang, C., Wang, F., Mi, H., & Shi, Y., Tactile Compass: Enabling Visually Impaired People to Follow a Path with Continuous Directional Feedback, CHI Conference on Human Factors in Computing Systems, 2021. https://doi.org/10.1145/3411764.3445644

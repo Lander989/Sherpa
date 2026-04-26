@@ -50,7 +50,7 @@ Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoa
 In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestanden te transcriberen en ChatGPT voor de analyse. Gemini en chatgpt werden gebruikt om de documentatie in github in te korten en vlotter te maken. Corbin gebruikte geen AI, zowel voor de documentatie als het project.
 
 ## Bijlagen
-### Discovery
+#### Discovery
 * Literatuuronderzoek (N=16)
 
   [- Lander: Protocol literatuurstudie](<./reports and protocols/Protocol Literatuur Studie.pdf>)
@@ -58,8 +58,7 @@ In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestand
   [- Roland: Protocol benchmarking](<./reports and protocols/Competitor analysis.pdf>)
   
   [- Corbin: Protocol benchmarking](<./reports and protocols/benchmarking_protocol_corbin_braekevelt.pdf>)
-  
-  
+    
   [- Lander: Rapport literatuurstudie](<./reports and protocols/Rapport Literatuur Studie.pdf>)
   
   [- Roland: Rapport benchmarking](<./reports and protocols/Competitor analysis.pdf>)
@@ -79,7 +78,7 @@ In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestand
   
    [- Corbin: Rapport interviews](<./reports and protocols/Interview-raport-Corbin_Braekevelt.pdf>)
     
-### Definition
+#### Definition
 * User testing wave 1 (N=6)
   * [Protocol](<./reports and protocols/Protocol Wave 1.pdf>)
   * [Rapport](<./reports and protocols/Verslag_wave1.pdf>)
@@ -87,11 +86,18 @@ In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestand
   * [Protocol](<./reports and protocols/Protocol Wave 2.pdf>)
   * [Rapport](<./reports and protocols/Rapport Wave 2.pdf>)
 
-### develop
+#### develop
 * User testing deel 1 (N=5)
   * [protocol](<./reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
   * [rapport](<./reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 
+* User testing deel 2 (N=2)
+  * [protocol](<./>)
+  * [rapport](<./>)
+
+* User testing deel 3 (N=?)
+  * [protocol](<./>)
+  * [rapport](<./>)
 ## Licentie
 
 This repository contains both software and design materials created as part of an industrial design energineering project at Ghent University.
