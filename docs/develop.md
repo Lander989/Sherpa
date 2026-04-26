@@ -3,8 +3,10 @@
 ## Deel 1 (N=5)
 Inleiding
 In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele architectuur. Door het product op te splitsen in verschillende deelaspecten ontstaat meer inzicht in hoe het systeem zal werken en welke onderdelen nodig zijn. Daarnaast worden er testen uitgevoerd samen met de doelgroep om de onderzoeksvragen te beantwoorden.
-### Onderzoeksvragen
+
 ---
+### Onderzoeksvragen
+
 
 * Kunnen de resultaten uit de studie van Liu et al. (2021) worden benaderd en toegepast binnen het concept?
 
@@ -12,12 +14,15 @@ In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele
 
 * Welke soorten informatie kunnen via trilsignalen aan de gebruiker worden overgebracht?
 
-### Scenario’s
 ---
+### Scenario’s
+
 In de definitionfase werd ervoor gekozen het product te ontwikkelen voor minder zelfredzame blinden, met als doel hen te helpen bij het aanleren en onderhouden van trajecten. Tijdens de developfase kwam een voorbeeldscenario naar voren dat de inzetbaarheid van het product aantoont.
 Zo is Dirk bijvoorbeeld niet in staat om een bepaald traject van buiten te leren. Het traject is namelijk niet voldoende aangepast voor blinden en bevat enkele open ruimtes waar geen duidelijke referentiepunten aanwezig zijn. In zulke situaties kan de wegwijzer extra ondersteuning en oriëntatie bieden tijdens het volgen van een route. Het ondersteunen van gebruikers zoals Dirk bij het afleggen van zulke trajecten vormt een belangrijke doelstelling van het project.
+
+---
 ### Architectuur
---- 
+
 Het systeem wordt opgesplitst in twee grote onderdelen: de recordfase en de playfase. Voor beide fases werd een MVP gedefinieerd.
 #### Recordfase
 
@@ -46,9 +51,9 @@ De focus lag in deze fase bij het uitwerken van de wijzer. Hierbij werd vertrokk
   <img src="../img/overzicht prototypes.png" width="100%">
 </p>
 
-
-### User testing
 ---
+### User testing
+
 Voor de testen werd een protocol en rapport opgesteld. Deze zijn hier te lezen.
 * [protocol](<../reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
 * [rapport](<../reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
@@ -127,13 +132,46 @@ ID   |                                                                          
 
 --- 
 ## Deel 2 (N=2)
-Inlieding
+Inleiding
 In deze fase worden zowel de ergonomie van de controller onderzocht als de nodige knoppen en de plaats van deze knoppen op het product.
 Aan de hand van voor onderzoek en het raadplegen van bestaande studies werden verschillende prototypes van het product gerealiseerd. Deze prototypes werden dan getest bij de doelgroep.
 
-### onderzoeksvragen
 ---
+### Onderzoeksvragen
 
+* Hoe maken we de interacties ergonomisch, met nadruk op een lage mentale belasting?
+* Hoe kan de vorm van het product de houding van de gebruiker sturen?
+* Welke knoppen zijn geschikt en bruikbaar voor de doelgroep?
+* Wat is de beste plaatsing van de knopen op het product voor de doelgroep ?
+
+---
+### Vooronderzoek ergonomie
+Om het verloop van deze fase lichter te maken werden de ontwerpen van de prototypes gebaseerd op bestaand onderzoek.
+Als eerst stap werd er gekeeken naar bestaande producten. Deze werden beschreven en bestudeerd een een benchmark fase.
+Vervolgens werden de nodige inputs gemapt aan verschillende button layouts. Daarna werd online gekeeken naar bstaande onderzoeken rond ergonomie, hooftzakenlijk rond de hand.
+Alle bevindingen werden neergeschreven in een ondrzoeks rapport, hier te zijn.
+
+
+
+
+---
+### Usertesting
+
+voor de testen met de doelgroep werden een protokol en rappert geschreven. deze zijn hier te lezen.
+* [protocol](<../>)
+* [rapport](<../>)
+
+
+#### Doel van de testen
+
+---
 ###  Bronnen
-Liu, G., Yu, T., Yu, C., Xu, H., Xu, S., Yang, C., Wang, F., Mi, H., & Shi, Y., Tactile Compass: Enabling Visually Impaired People to Follow a Path with Continuous Directional Feedback, CHI Conference on Human Factors in Computing Systems, 2021. https://doi.org/10.1145/3411764.3445644
+* Liu, G., Yu, T., Yu, C., Xu, H., Xu, S., Yang, C., Wang, F., Mi, H., & Shi, Y., Tactile Compass: Enabling Visually Impaired People to Follow a Path with Continuous Directional Feedback, CHI Conference on Human Factors in Computing Systems, 2021. https://doi.org/10.1145/3411764.3445644
+
+* González, A. G. (2018). An ergonomic customized-tool handle design for precision tools using additive manufacturing: A case study. Applied Sciences. Opgehaald van doi.org: https://doi.org/10.3390/app8071200
+
+* Patkin's, M. (2026). A Check-List for Handle Design. (z.d.). Opgehaald van Michael Patkin's: https://mpatkin.org/ergonomics/handle_checklist.htm
+
+* Tilley, A. R. (1974). Opgehaald van Whitney Library of Design: https://arc104201516.wordpress.com/wp-content/uploads/2016/02/the-measure-of-man-and-woman-human-factors-in-design-alvin-r-tilley-henry
+
 
