@@ -142,22 +142,35 @@ Aan de hand van voor onderzoek en het raadplegen van bestaande studies werden ve
 * Hoe maken we de interacties ergonomisch, met nadruk op een lage mentale belasting?
 * Hoe kan de vorm van het product de houding van de gebruiker sturen?
 * Welke knoppen zijn geschikt en bruikbaar voor de doelgroep?
-* Wat is de beste plaatsing van de knopen op het product voor de doelgroep ?
+* Wat is de beste plaatsing van die knopen op het product voor de doelgroep ?
 
 ---
-### Vooronderzoek ergonomie
-Om het verloop van deze fase lichter te maken werden de ontwerpen van de prototypes gebaseerd op bestaand onderzoek.
-Als eerst stap werd er gekeeken naar bestaande producten. Deze werden beschreven en bestudeerd een een benchmark fase.
-Vervolgens werden de nodige inputs gemapt aan verschillende button layouts. Daarna werd online gekeeken naar bstaande onderzoeken rond ergonomie, hooftzakenlijk rond de hand.
-Alle bevindingen werden neergeschreven in een ondrzoeks rapport, hier te zijn.
+### Vooronderzoek ergonomie// verloop
+Om het verloop van deze fase lichter te maken, werden de ontwerpen van de prototypes gebaseerd op bestaande producten en onderzoek.
+Als eerste stap werd er gekeken naar bestaande producten. Deze werden beschreven en bestudeerd in een benchmark.
+
+Vervolgens werden de nodige inputs gemapt naar verschillende buttonlayouts. Daarna werd gekeken naar bestaande onderzoeken rond ergonomie, hoofdzakelijk met betrekking tot de hand. Kritische maten werden bepaald om vervolgens met een ontwerpstrategie de exacte afmetingen vast te leggen.
+
+Als ondersteuning werden kleimodellen gemaakt om vormen en maten te valideren. Uiteindelijk resulteerde dit onderzoek in enkele prototypes om mee naar de doelgroep te trekken.
+
+Alle bevindingen werden neergeschreven in een onderzoeksrapport, dat hier te lezen is.
 * [rapport](<../>)
 
 
 
 ---
 ### Usertesting
+De testen bestaan uit twee delen. Het eerste onderzoek kijkt naar hoe gebruikers spontaan omgaan met de prototypes. Daarnaast wordt hen gevraagd om de prototypes te rangschikken van meest comfortabel naar minst comfortabel, met bijhorende argumentatie.
 
-voor de testen met de doelgroep werden een protokol en rappert geschreven. deze zijn hier te lezen.
+<p align="center">
+  <img src="../img/Dev_2_T1.jpg" width="75%">
+</p>
+
+
+
+Het tweede deel gaat in op het gebruik. Eén van de prototypes is verder uitgewerkt om de interacties na te bootsen. Hiermee wordt een scenario nagespeeld. Als onderzoeker observeren we welke handelingen de gebruikers stellen, bijvoorbeeld hoe ze het toestel wegsteken en hoe ze het vasthouden wanneer ze het niet gebruiken.
+
+Voor de testen met de doelgroep werden een protocol en rapport geschreven. deze zijn hier te lezen. 
 * [protocol](<../>)
 * [rapport](<../>)
 
