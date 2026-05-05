@@ -1,18 +1,17 @@
 //Bibliotheken
 #include <TinyGPSPlus.h>        //GPS module 
-//#include <SoftwareSerial.h>
-     //Seriele communicatie
+//#include <SoftwareSerial.h>   //Seriele communicatie
 #include "AK09918.h"            //magnetometer
 #include "ICM20600.h"           //Accelero en gyro
 #include <Wire.h>               //i2C
 //#include <MadgwickAHRS.h>     //filter om gyro accelo en magneto te combineren madgwick
-#include <HardwareSerial.h>
-#include <ESP32Servo.h>
-#include <Arduino.h>
+#include <HardwareSerial.h>     
+#include <ESP32Servo.h>         //servolibrary
+#include <Arduino.h>      
 #include <math.h>
 #include <stdint.h>
-#include "HapticPattern.h"
-#include "OneButton.h"
+#include "HapticPattern.h"      //trilmotor patronen
+#include "OneButton.h"          //knoppen logica 
 
 
 
@@ -24,7 +23,7 @@ static const int RXPin = 8, TXPin = 9;  //rx en tx pin voor gps
 static const uint32_t GPSBaud = 9600;   //GPSBaud rate
 
 
-TinyGPSPlus gps; // The TinyGPSPlus object
+TinyGPSPlus gps; // Het TinyGPSPlus object
 
 // Het filter object
 //Madgwick filter;
@@ -41,28 +40,28 @@ double TargetLong;
 double CurrentLat; 
 double CurrentLong;
 
-int Bearing;             //richtinig tussen beide posities
-int Heading;              
-int SignedHeading;
+int Bearing;             //Naar waar moeten we 0 360
+int Heading;             //Naar waar kijken we 0 360
+int SignedHeading;       //Naar waar kijken we 180 -180
 
 
-//IMU
+//IMU object aanmaken
 AK09918 ak09918;
 ICM20600 icm20600(true);
 AK09918_err_type_t err;
 
-int32_t x, y, z; //ruwe x,y,z van magnetometer
-float  mx, my, mz;//verwerkte x,y,z met offset van calibratie
+int32_t x, y, z;   //ruwe x,y,z van magnetometer
+float  mx, my, mz; //verwerkte x,y,z met offset van calibratie
 
-float   Mag_x_dampened,       Mag_y_dampened,       Mag_z_dampened;
+float   Mag_x_dampened, Mag_y_dampened, Mag_z_dampened;
 float   Mag_x_hor, Mag_y_hor;
 float   Mag_pitch, Mag_roll;
 
-float ax, ay, az;//ruwe acceleratie in x,y,z
-float gx, gy, gz;//ruwe gyro in x,y,z
+float ax, ay, az; //ruwe acceleratie in x,y,z
+float gx, gy, gz; //ruwe gyro in x,y,z
 
 float gpitch, groll, gyaw, avector, apitch, aroll;
-float   gpitch_out, groll_out;
+float gpitch_out, groll_out;
 double roll, pitch;
 
 // Find the magnetic declination at your location
@@ -70,7 +69,7 @@ double roll, pitch;
 double declination_shenzhen = 2.13;
 
 #define Frequency 125                                                   // 8mS sample interval 
-#define Sensitivity 32.8                                               // Gyro sensitivity (see data sheet)
+#define Sensitivity 32.8                                                // Gyro sensitivity (see data sheet)
 
 #define Sensor_to_deg 1/(Sensitivity*Frequency)                         // Convert sensor reading to degrees
 #define Sensor_to_rad Sensor_to_deg*DEG_TO_RAD                          // Convert sensor reading to radians
@@ -94,7 +93,7 @@ double LatAndLongs[numLatAndLongs][2] = {
 
 bool Gyro_synchronised = false;
 //magnetometer calibratiewaarden, bepaald via calibratiesript
-bool  Record_data = false;
+bool  Record_data = false; //calibratie uitvoerne JA/NEE
 float offset_x = 2;
 float offset_y = 1;
 float offset_z = 6;
@@ -105,12 +104,10 @@ float scale_z = 0.85;
 //gyro calibratiewaarden
 float gx_cal, gy_cal, gz_cal;
 
-
 //update snelheid controle a.d.v micros()
 float HuidigeTijd = 0, LastUpdate = 0;
 float UpdateFrequentie = 1000000/100; //1s in micros / 50 
 float ActueleFrequentie = 0;
-
 
 //servo pos
 int pos =0;
@@ -125,7 +122,6 @@ void setup()
 
   button_1.attachPress(NextPoint); //knop 1 indrdukken -> nextpoint uitvoeren
 
-
   Serial.begin(115200);
   Serial1.begin(GPSBaud, SERIAL_8N1, RXPin, TXPin);
   
@@ -135,7 +131,6 @@ void setup()
   Servo.setPeriodHertz(50); 
   Servo.attach(D10, 500, 2400); //ServoPin toekennen
   Servo.write(0); 
-  
   
   // join I2C bus
   Wire.begin();
@@ -161,15 +156,9 @@ void setup()
   }
 
   Calibrate_gyro();
-
-
   LastUpdate = micros();
 
-
-
 }
-
-
 
 void loop()
 {
@@ -179,19 +168,13 @@ void loop()
   updateGPS();
   GetPosition();
 
-      static int ServoBuffer = 0;
-    if(++ServoBuffer >= 10){
-    ServoBuffer = 0;
-          StuurServo();
-    }
-
-
-  StuurServo();
-
+  static int ServoBuffer = 0;
     
-  
-
-
+  if(++ServoBuffer >= 10)
+  {
+    ServoBuffer = 0;
+    StuurServo();
+  }
 
   Serial.print(" TargetLat:");
   Serial.print(TargetLat,6);
@@ -216,37 +199,29 @@ void loop()
 
    Serial.print(" Bearing:");
 
-    Bearing = TinyGPSPlus::courseTo(
+    Bearing = TinyGPSPlus::courseTo
+    (
     CurrentLat, CurrentLong, 
     TargetLat, TargetLong
     );
 
-        // Calculate the difference between bearing to destination and current heading
-
-
   Serial.print(Bearing);
   GetCurrentHeading();
- 
 
   Serial.print("Heading:");
   Serial.println(Heading);
 
-
-
-  
-   }
+}
 
 void NextPoint(){
 
  static int index = 0;
 
- 
-
  if (index >= numLatAndLongs){index = 0;}
 
  TargetLat = LatAndLongs[index][0];
- TargetLong = LatAndLongs[index][1];
-index = index +1;
+ TargetLong = LatAndLongs[index][1]; 
+ index = index +1;
 
 }
 
@@ -384,17 +359,10 @@ void GetPosition()
   }
   else
   {
-    Serial.print("GPS_Location_NOT_Valid <3"  );
+    Serial.print("GPS_Location_NOT_Valid"  );
   }
 }
 
-
-void GetHeading()
-{
-
-
-    
-}
 
 float convertRawAcceleration(int aRaw) {
   // since we are using 2 g range
@@ -406,9 +374,9 @@ float convertRawAcceleration(int aRaw) {
 }
 
 float convertRawGyro(int gRaw) {
-  // since we are using 250 degrees/seconds range
-  // -250 maps to a raw value of -32768
-  // +250 maps to a raw value of 32767
+  // since we are using 500 degrees/seconds range
+  // -500 maps to a raw value of -32768
+  // +500 maps to a raw value of 32767
   
   float g = (gRaw * 500.0) / 32768.0;
   return g;
