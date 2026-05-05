@@ -110,7 +110,9 @@ float UpdateFrequentie = 1000000/100; //1s in micros / 50
 float ActueleFrequentie = 0;
 
 //servo pos
-int pos =0;
+int pos = 0;
+double Demping = 0.05;
+int pos_out = 0;
 
 void setup()
 {
@@ -506,6 +508,34 @@ void calibrate_magnetometer()
   }
 }
 
+/*
+void StuurServo()
+{
+    // Gebruik modulo % 360 om altijd tussen 0-359 te blijven
+    int LowerLimit = (Bearing - 90 + 360) % 360;
+    int UpperLimit = (Bearing + 90) % 360;
+
+    float relatieveHeading = Heading;
+
+    // Check of we over het 360/0 punt heen gaan (bijv. bearing is 10)
+    if (LowerLimit > UpperLimit) 
+    {
+        // Als de heading onder de grens zit (bijv. 5 graden), 
+        // tel er 360 bij op voor de berekening.
+        if (relatieveHeading < UpperLimit) {
+            relatieveHeading += 360;
+        }
+        // Maak de bovengrens ook virtueel groter voor de map() functie
+        UpperLimit += 360;
+    }
+
+    // Nu kun je veilig mappen
+    pos = 180 - map(relatieveHeading, LowerLimit, UpperLimit, 0, 180);
+    pos = constrain(pos, 0, 180);
+    
+    Servo.write(pos);
+}
+*/
 
 void StuurServo()
 {
@@ -514,11 +544,13 @@ void StuurServo()
   if (Delta > 180)  Delta -= 360;
   if (Delta < -180) Delta += 360;
 
-  int pos = 90 - Delta;
+  pos = 90 - Delta;
 
   pos = constrain(pos, 0, 180);
 
-  Servo.write(pos);
+  pos_out = pos + Demping * (pos - pos_out);
+
+  Servo.write(pos_out);
 }
 
 
