@@ -40,7 +40,7 @@ double TargetLong;
 double CurrentLat; 
 double CurrentLong;
 
-int Bearing;             //Naar waar moeten we 0 360
+int Bearing = 0;             //Naar waar moeten we 0 360
 int Heading;             //Naar waar kijken we 0 360
 int SignedHeading;       //Naar waar kijken we 180 -180
 
@@ -94,12 +94,12 @@ double LatAndLongs[numLatAndLongs][2] = {
 bool Gyro_synchronised = false;
 //magnetometer calibratiewaarden, bepaald via calibratiesript
 bool  Record_data = false; //calibratie uitvoerne JA/NEE
-float offset_x = 2;
-float offset_y = 1;
+float offset_x = -1;
+float offset_y = -10;
 float offset_z = 6;
-float scale_x = 1.03;
-float scale_y = 1.16;
-float scale_z = 0.85;
+float scale_x = 1.04;
+float scale_y = 1.13;
+float scale_z = 0.87;
 
 //gyro calibratiewaarden
 float gx_cal, gy_cal, gz_cal;
@@ -193,7 +193,8 @@ void loop()
        Serial.print("pos:");
 
   Serial.print(pos);
-
+  
+  Serial.print(F(","));
  
   Serial.print(gps.distanceBetween(CurrentLat, CurrentLong, TargetLat,TargetLong));
 
@@ -508,29 +509,16 @@ void calibrate_magnetometer()
 
 void StuurServo()
 {
-    // Gebruik modulo % 360 om altijd tussen 0-359 te blijven
-    int LowerLimit = (Bearing - 90 + 360) % 360;
-    int UpperLimit = (Bearing + 90) % 360;
+  int Delta = Bearing - Heading;
 
-    float relatieveHeading = Heading;
+  if (Delta > 180)  Delta -= 360;
+  if (Delta < -180) Delta += 360;
 
-    // Check of we over het 360/0 punt heen gaan (bijv. bearing is 10)
-    if (LowerLimit > UpperLimit) 
-    {
-        // Als de heading onder de grens zit (bijv. 5 graden), 
-        // tel er 360 bij op voor de berekening.
-        if (relatieveHeading < UpperLimit) {
-            relatieveHeading += 360;
-        }
-        // Maak de bovengrens ook virtueel groter voor de map() functie
-        UpperLimit += 360;
-    }
+  int pos = 90 - Delta;
 
-    // Nu kun je veilig mappen
-    pos = 180 - map(relatieveHeading, LowerLimit, UpperLimit, 0, 180);
-    pos = constrain(pos, 0, 180);
-    
-    Servo.write(pos);
+  pos = constrain(pos, 0, 180);
+
+  Servo.write(pos);
 }
 
 
