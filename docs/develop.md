@@ -8,11 +8,11 @@ In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele
 ### Onderzoeksvragen
 
 
-* Kunnen de resultaten uit de studie van Liu et al. (2021) worden benaderd en toegepast binnen het concept?
+* Wat  betekend de studie van Liu et al. (2021) voor het concept?
 
-* Geeft het wegwijzerconcept voldoende zekerheid aan de gebruikers?
+* Wat is er nodig zodat het wijzerconcept zekerheid biedt aan de gebruiker?
 
-* Welke soorten informatie kunnen via trilsignalen aan de gebruiker worden overgebracht?
+* Welke feedback uit de systeemarchitectuur kunnen via trilsignalen overgebracht worden?
 
 ---
 ### Scenario’s
@@ -60,7 +60,7 @@ Voor de testen werd een protocol en rapport opgesteld. Deze zijn hier te lezen.
 ### Doel van de testen
 Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten (variërend van volledig blind tot restvisus) om:
 
-* 	De duidelijkste manier van tactiele richtingsaansturing te bepalen (cirkeltest).
+* De duidelijkste manier van tactiele richtingsaansturing te bepalen (cirkeltest).
 
 * Het beste prototype te testen in een realistische wandelcontext (trajectaanduiding).
 

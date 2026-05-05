@@ -40,21 +40,44 @@ Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
 
 - Op afstand het systeem uitlezen en de data weergeven op een HMI: Connectiviteit wifi/bluethoot, dashbord waar data weergegeven wordt om troubleshooting te bevorderen.
 
-### IMU
-#### Concept
+### Richtingbepaling
+---
+Doel
+
 De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: Hoe weet de wijzer naar waar hij moet wijzen? Volgende afbeelding illustreert hoe de hoek bepaald wordt. Het magnetisch noorder dient als nullijn. wijzersin loopt de hoek van 0 tot 360 graden op. Soms komt [0,180] en [-180,0] voor in de berekeningen. Onthoud dat de heading en bearing altijd genormaliseerd worden naar een waarde tussen de 0 en 360 graden. Het verschil tussen de heading en bearing noemen we delta. Met delta kan teta gevonden worden. Teta stuurt de hoek van de servo.
+
+Met een IMU bepalen we de heading. De bearing bepaling we aan de hand van de huidige locatie en het doelwit. De huidige locatie halen we op met een gps. Het doelwit is een van de opgeslagen coordinaten.
 
 <p align="center">
   <img src="../img/Illustratie_hoeken_wijzer.png" width="50%">
 </p>
 
-#### Onderdelen en schakeling
+
+#### IMU
 We maken gebruik van een grove 9dof IMU. Deze sensor bevat een accelerometer, gyrometer en magnetometer. 
-#### IMU uitlezen
-De meegeleverde voorbeeld code uit de bibliotheek is onbruikbaar, deze bevat geen tilt compensatie en sensor fusion. Volgdende instructables post gebruiken we als basis om onze sensoren uit te lezen en om te zetten in nuttige informatie
+
+De meegeleverde voorbeeld code uit de bibliotheek is onbruikbaar, deze bevat geen tilt compensatie en sensor fusion. Volgdende instructables post gebruiken we als basis om onze sensoren uit te lezen en om te zetten in nuttige stabiele informatie.
 
 >https://www.instructables.com/Tilt-Compensated-Compass/
 
+#### GPS
+De gps is in staat om binnen de 2 meter zijn positie te bepalen. Dit coordinaat update constant. De bibliotheek TinyGPS++ bevat een bearing functie die bij ingave van twee coordinaten de bearing teruggeeft.
+
+### Inputs en outputs
+--- 
+De gebruiker bestuurd het toestel met 2 knoppen. De knoppen zijn NO drukknopjes. We verbinden ze met pulldown weerstanden aan de microcontroller. 
+Het toestel bevat ook een trilmotor voor vibratiefeedback. De trilmotor wordt aangestuurd met een pwm signaal. Dit maakt het mogelijk om verschillende patronen af te spelen.
+
+
+
+## Onderdelen en schakeling
+
+Volgende afbeelding toont de schakeling schematisch weer.
+
 <p align="center">
   <img src="../img/Schakeling.png" width="100%">
+</p>
+Dit schema uitgewerkt in een eerste versie ziet er chaotisch uit. Maar alles is aanwezig om de functionaliteit te testen. Hierna kan de geteste en werkende versie in een afgewerkte omhuizing worden gestoken.
+<p align="center" >
+  <img src="../img/EersteVersie.png" width="100%">
 </p>

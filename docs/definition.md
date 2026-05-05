@@ -5,11 +5,9 @@
 
 In deelopdracht 2 (Definition Phase) zijn eerste low-fidelity prototypes ontwikkeld. Het doel was te onderzoeken of het concept van een tactiele kaart als ruimtelijk referentiekader begrijpelijk, bruikbaar en zinvol is voor mensen met een visuele beperking. De focus lag expliciet op “Design the Right Thing” vóór technologische verfijning.
 
-Kernvragen waren:
+Onderzoeksvragen:
 
-- Hoe interpreteren gebruikers tactiele kaartinformatie?
-
-- Hoe verkennen zij een tactiel oppervlak?
+- Hoe verkennen en interpreteren gebruikers tactiele kaartinformatie?
 
 - Hoe leesbaar en resoluut zijn de kaarten?
 
