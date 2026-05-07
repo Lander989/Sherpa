@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ESP32 Dashboard - Data Only</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; background: #2c3e50; color: white; }
+        #waarde { 
+            font-size: 20px; 
+            background: #34495e; 
+            padding: 15px; 
+            border-radius: 8px; 
+            display: inline-block;
+            margin-bottom: 20px;
+            font-family: monospace;
+        }
+        canvas { 
+            background: #ecf0f1; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Sherpa Dashboard</h1>
+    <div id="waarde">Wachten op data...</div>
+    <br>
+    <canvas id="mainCanvas" width="800" height="600"></canvas>
+   
+    <canvas id="SideCanvas" width="200" height="600"></canvas>
+
+<script>
+    const canvas = document.getElementById('mainCanvas');
+    const ctx = canvas.getContext('2d');
+    const waardeDiv = document.getElementById('waarde');
+    const esp_ip = "http://192.168.4.1/"; 
+
+    const vasteRoute = [
+        {lat: 50.82203583718, lon: 3.250203499485071},
+        {lat: 50.82248311558124, lon: 3.249814364076176},
+        {lat: 50.82280936567335, lon: 3.249506841963281},
+        {lat: 50.82290438720041, lon: 3.249775147984462},
+        {lat: 50.82297014705247, lon: 3.249876721194085},
+        {lat: 50.82333168938293, lon: 3.24995154845745},
+        {lat: 50.82322657139648, lon: 3.250096499029316},
+        {lat: 50.82310024534906, lon: 3.250265608880998},
+        {lat: 50.82298668769774, lon: 3.250430832447586},
+        {lat: 50.82301929383115, lon: 3.250553410312684},
+        {lat: 50.82299084096115, lon: 3.250686753777015},
+        {lat: 50.82292988850632, lon: 3.250815757914327},
+        {lat: 50.82293099081649, lon: 3.250905939009099},
+        {lat: 50.82291700329406, lon: 3.251002613672513},
+        {lat: 50.82289016963751, lon: 3.251084601718626},
+        {lat: 50.82283277777221, lon: 3.251099514930891},
+        {lat: 50.82277120649284, lon: 3.251046413469383},
+        {lat: 50.82274325619774, lon: 3.25093027053835},
+        {lat: 50.82277429038375, lon: 3.250831028196486},
+        {lat: 50.82276501104563, lon: 3.250790091195597},
+        {lat: 50.82264929996325, lon: 3.250743202924611},
+        {lat: 50.82250874882511, lon: 3.250710363990379},
+        {lat: 50.82236925715906, lon: 3.250739336533304},
+        {lat: 50.82228646656925, lon: 3.250774704296462},
+        {lat: 50.82226421697042, lon: 3.250770322648597},
+        {lat: 50.82217462048963, lon: 3.250529559085031}
+    ];
+
+    let livePos = { lat: 0, lon: 0, heading: 0 };
+
+    // Instellingen voor het gebied
+    const minLat = 50.8220; const maxLat = 50.8235;
+    const minLon = 3.2490;  const maxLon = 3.2515;
+
+    function mapVal(value, start1, stop1, start2, stop2) {
+        return start2 + (stop2 - start2) * ((value - start1) / (stop1 - start1));
+    }
+
+    function gpsToScreen(lat, lon) {
+        let x = mapVal(lon, minLon, maxLon, 0, canvas.width);
+        let y = mapVal(lat, minLat, maxLat, canvas.height, 0); 
+        return { x: x, y: y };
+    }
+
+    function fetchESPData() {
+	return fetch(esp_ip)
+        
+            .then(response => response.text())
+            .then(text => {
+                waardeDiv.innerText = "Lat: " + text.split(',')[0] + " | Lon: " + text.split(',')[1] + " | Head: " + text.split(',')[2] + "°";
+                const parts = text.split(',');
+                if(parts.length >= 3) {
+                    livePos.lat = parseFloat(parts[0]);
+                    livePos.lon = parseFloat(parts[1]);
+                    livePos.heading = parseFloat(parts[2]);
+                    render();
+                }
+            })
+            .catch(err => {
+                waardeDiv.innerText = "ESP32 Offline";
+            });
+    }
+
+    function render() {
+        // Scherm wissen
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        // Grid tekenen voor referentie
+        ctx.strokeStyle = '#ddd';
+        ctx.lineWidth = 1;
+        for(let i=0; i<canvas.width; i+=50) { ctx.beginPath(); ctx.moveTo(i,0); ctx.lineTo(i,canvas.height); ctx.stroke(); }
+        for(let i=0; i<canvas.height; i+=50) { ctx.beginPath(); ctx.moveTo(0,i); ctx.lineTo(canvas.width,i); ctx.stroke(); }
+
+        // Blauwe route tekenen
+        ctx.strokeStyle = '#3498db';
+        ctx.lineWidth = 6;
+        ctx.lineJoin = 'round';
+        ctx.beginPath();
+        vasteRoute.forEach((p, index) => {
+            let s = gpsToScreen(p.lat, p.lon);
+            if (index === 0) ctx.moveTo(s.x, s.y);
+            else ctx.lineTo(s.x, s.y);
+        });
+        ctx.stroke();
+
+        // Live positie marker
+        let liveS = gpsToScreen(livePos.lat, livePos.lon);
+        
+        // Pulserende cirkel effect
+        ctx.fillStyle = 'rgba(231, 76, 60, 0.3)';
+        ctx.beginPath();
+        ctx.arc(liveS.x, liveS.y, 15, 0, Math.PI * 2);
+        ctx.fill();
+
+        ctx.fillStyle = '#e74c3c';
+        ctx.beginPath();
+        ctx.arc(liveS.x, liveS.y, 8, 0, Math.PI * 2);
+        ctx.fill();
+        ctx.strokeStyle = 'white';
+        ctx.lineWidth = 2;
+        ctx.stroke();
+
+        // Richtingpijl
+        drawArrow(canvas.width - 60, canvas.height - 60, livePos.heading);
+    }
+
+    function drawArrow(x, y, angle) {
+        ctx.save();
+        ctx.translate(x, y);
+        ctx.rotate(angle * Math.PI / 180);
+        ctx.fillStyle = '#e74c3c';
+        ctx.beginPath();
+        ctx.moveTo(0, -20); ctx.lineTo(-10, 10); ctx.lineTo(10, 10);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+    }
+
+    function loop() {
+    fetchESPData().finally(() => setTimeout(loop, 50));
+    }
+
+    loop();
+    render(); // Eerste tekenbeurt
+</script>
+</body>
+</html>

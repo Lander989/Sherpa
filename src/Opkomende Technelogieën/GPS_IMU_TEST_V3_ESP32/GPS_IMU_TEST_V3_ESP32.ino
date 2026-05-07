@@ -13,11 +13,21 @@
 #include "HapticPattern.h"      //trilmotor patronen
 #include "OneButton.h"          //knoppen logica 
 
+#include <WiFi.h>
+#include <WebServer.h>
+
+// Set your AP credentials
+const char* ssid = "Sherpa";
+const char* password = "1234";
+
+// Create a web server on port 80
+WebServer server(80);
+
 
 
 Servo Servo;                   //Servo object aanmaken
 
-HapticPattern motor(5);        //trilmotor object aanmaken
+HapticPattern motor(D7);        //trilmotor object aanmaken
 
 static const int RXPin = 8, TXPin = 9;  //rx en tx pin voor gps
 static const uint32_t GPSBaud = 9600;   //GPSBaud rate
@@ -79,27 +89,46 @@ long    Loop_start;                                                     // Loop 
 
 
 OneButton button_1(D3, false); // Pin 2
+OneButton button_2(D2, false); // Pin 2
 
-const int numLatAndLongs= 7;
+const int numLatAndLongs = 26; // Aantal coördinaten aangepast naar 26
 double LatAndLongs[numLatAndLongs][2] = {
-  {50.838779664031804, 3.233811103087599},
-  {50.839249188227214, 3.2331139431244202},
-  {50.83955922456095, 3.2327022434662727},
-  {50.84004582974001, 3.233466992910386},
-  {50.840584385901955, 3.2332570448046307},
-  {50.840728684618185, 3.2331769056924453},
-  {50.84087991788618, 3.233275153105008}
+  {50.822035837180, 3.250203499485},
+  {50.822483115581, 3.249814364076},
+  {50.822809365673, 3.249506841963},
+  {50.822904387200, 3.249775147984},
+  {50.822970147052, 3.249876721194},
+  {50.823331689382, 3.249951548457},
+  {50.823226571396, 3.250096499029},
+  {50.823100245349, 3.250265608880},
+  {50.822986687697, 3.250430832447},
+  {50.823019293831, 3.250553410312},
+  {50.822990840961, 3.250686753777},
+  {50.822929888506, 3.250815757914},
+  {50.822930990816, 3.250905939009},
+  {50.822917003294, 3.251002613672},
+  {50.822890169637, 3.251084601718},
+  {50.822832777772, 3.251099514930},
+  {50.822771206492, 3.251046413469},
+  {50.822743256197, 3.250930270538},
+  {50.822774290383, 3.250831028196},
+  {50.822765011045, 3.250790091195},
+  {50.822649299963, 3.250743202924},
+  {50.822508748825, 3.250710363990},
+  {50.822369257159, 3.250739336533},
+  {50.822286466569, 3.250774704296},
+  {50.822264216970, 3.250770322648},
+  {50.822174620489, 3.250529559085}
 };
-
 bool Gyro_synchronised = false;
 //magnetometer calibratiewaarden, bepaald via calibratiesript
 bool  Record_data = false; //calibratie uitvoerne JA/NEE
-float offset_x = -1;
-float offset_y = -10;
-float offset_z = 6;
-float scale_x = 1.04;
-float scale_y = 1.13;
-float scale_z = 0.87;
+float offset_x = -3;
+float offset_y = -20;
+float offset_z = -1;
+float scale_x = 1.08;
+float scale_y = 1.14;
+float scale_z = 0.83;
 
 //gyro calibratiewaarden
 float gx_cal, gy_cal, gz_cal;
@@ -114,15 +143,27 @@ int pos = 0;
 double Demping = 0.05;
 int pos_out = 0;
 
+
+//startup
+bool Status_ON_OF = 0;
+
 void setup()
 {
+
+  // Set ESP32 as Access Point
+  WiFi.softAP(ssid, password);
+  IPAddress IP = WiFi.softAPIP();
+
+  server.on("/", handleRoot);
+  server.begin();
 
   ESP32PWM::allocateTimer(0);
   ESP32PWM::allocateTimer(1);
   ESP32PWM::allocateTimer(2);
   ESP32PWM::allocateTimer(3);
+  
+  button_2.setPressMs(1000); // Zet de grens op 1000ms
 
-  button_1.attachPress(NextPoint); //knop 1 indrdukken -> nextpoint uitvoeren
 
   Serial.begin(115200);
   Serial1.begin(GPSBaud, SERIAL_8N1, RXPin, TXPin);
@@ -162,21 +203,33 @@ void setup()
 
 }
 
+void handleRoot() {
+  // Toestemming geven voor de browser 
+  server.sendHeader("Access-Control-Allow-Origin", "*");
+
+String data = String(gps.location.lat(), 6) + "," + 
+                String(gps.location.lng(), 6) + "," + 
+                String(Heading);
+
+  server.send(200, "text/plain", data);
+}
+
 void loop()
 {
+  server.handleClient();
 
   button_1.tick();
+  button_2.tick();
+  motor.update();  // Update de trillingen
 
   updateGPS();
+  
   GetPosition();
+  GetBearing();
+  GetCurrentHeading();
+  NextPoint();
 
-  static int ServoBuffer = 0;
-    
-  if(++ServoBuffer >= 10)
-  {
-    ServoBuffer = 0;
-    StuurServo();
-  }
+  StuurServo();
 
   Serial.print(" TargetLat:");
   Serial.print(TargetLat,6);
@@ -192,7 +245,7 @@ void loop()
   Serial.print(CurrentLong,6);
   Serial.print(F(","));
   
-       Serial.print("pos:");
+  Serial.print("pos:");
 
   Serial.print(pos);
   
@@ -202,30 +255,52 @@ void loop()
 
    Serial.print(" Bearing:");
 
-    Bearing = TinyGPSPlus::courseTo
-    (
-    CurrentLat, CurrentLong, 
-    TargetLat, TargetLong
-    );
-
   Serial.print(Bearing);
-  GetCurrentHeading();
+  
 
   Serial.print("Heading:");
   Serial.println(Heading);
 
 }
 
-void NextPoint(){
+void GetBearing()
+{
+  Bearing = TinyGPSPlus::courseTo(CurrentLat, CurrentLong, TargetLat, TargetLong);
+}
 
- static int index = 0;
 
- if (index >= numLatAndLongs){index = 0;}
 
- TargetLat = LatAndLongs[index][0];
- TargetLong = LatAndLongs[index][1]; 
- index = index +1;
+void NextPoint() {
+  float Distance = gps.distanceBetween(CurrentLat, CurrentLong, TargetLat, TargetLong);
+  
+  unsigned long CurrentTime = millis();
+  static unsigned long ArrivalTime = 0;
+  static bool TargetHit = false;
+  static int index = 0;
 
+
+  if (Distance < 2.0 && !TargetHit) { 
+    ArrivalTime = CurrentTime;
+    TargetHit = true;
+    Serial.println("TargetHit");
+  }
+
+
+  if (TargetHit) {
+    if (CurrentTime - ArrivalTime > 1000) { 
+      
+      TargetLat = LatAndLongs[index][0];
+      TargetLong = LatAndLongs[index][1]; 
+      
+      index++;
+      if (index >= numLatAndLongs) {
+        index = 0; 
+      }
+
+      TargetHit = false;
+      Serial.println("NextTarget");
+    }
+  }
 }
 
 void GetCurrentHeading() 
@@ -330,11 +405,6 @@ void GetCurrentHeading()
 }
 
 
-
-
-
-
-
 //-------------------------------------------------------------------------
 
 void updateGPS()
@@ -371,7 +441,7 @@ float convertRawAcceleration(int aRaw) {
   // since we are using 2 g range
   // -2 g maps to a raw value of -32768
   // +2 g maps to a raw value of 32767
-  
+
   float a = (aRaw * 2.0) / 32768.0;
   return a;
 }
@@ -384,6 +454,47 @@ float convertRawGyro(int gRaw) {
   float g = (gRaw * 500.0) / 32768.0;
   return g;
 }
+
+
+
+
+//rekent delta uit en stuur de servo aan, bij delta 0 geeft de trilmotor een signaal
+void StuurServo()
+{
+
+  int Delta = Bearing - Heading;
+
+  if (Delta > 180)  Delta -= 360;
+  if (Delta < -180) Delta += 360;
+
+  pos = 90 - 2 * Delta;
+
+  pos = constrain(pos, 0, 180);
+
+  pos_out = pos + Demping * (pos - pos_out);
+
+  static unsigned long LaatsteTrigger = 0;
+  unsigned long HuidigeTijd = millis();
+  
+  if(abs(Delta) <= 1)
+  {
+    if (HuidigeTijd - LaatsteTrigger > 500)
+    {
+      motor.trigger(5);
+      LaatsteTrigger = HuidigeTijd;
+    }
+
+  }
+
+  static int ServoBuffer = 0;
+    
+  if(++ServoBuffer >= 10)
+  {
+    ServoBuffer = 0;
+    Servo.write(pos_out);
+  }  
+}
+
 
 
 void Calibrate_gyro()
@@ -412,9 +523,6 @@ void Calibrate_gyro()
   gy_cal /= 2000;                                   //Divide the gyro_y_cal variable by 2000 to get the average offset
   gz_cal /= 2000;                                   //Divide the gyro_z_cal variable by 2000 to get the average offset
 }
-
-
-
 
 
 void calibrate_magnetometer()
@@ -502,55 +610,9 @@ void calibrate_magnetometer()
     Serial.println(scale_z);
     Serial.println("");
 
-
     // ----- Halt program
     while (true);                                       // Wheelspin ... program halt
   }
-}
-
-/*
-void StuurServo()
-{
-    // Gebruik modulo % 360 om altijd tussen 0-359 te blijven
-    int LowerLimit = (Bearing - 90 + 360) % 360;
-    int UpperLimit = (Bearing + 90) % 360;
-
-    float relatieveHeading = Heading;
-
-    // Check of we over het 360/0 punt heen gaan (bijv. bearing is 10)
-    if (LowerLimit > UpperLimit) 
-    {
-        // Als de heading onder de grens zit (bijv. 5 graden), 
-        // tel er 360 bij op voor de berekening.
-        if (relatieveHeading < UpperLimit) {
-            relatieveHeading += 360;
-        }
-        // Maak de bovengrens ook virtueel groter voor de map() functie
-        UpperLimit += 360;
-    }
-
-    // Nu kun je veilig mappen
-    pos = 180 - map(relatieveHeading, LowerLimit, UpperLimit, 0, 180);
-    pos = constrain(pos, 0, 180);
-    
-    Servo.write(pos);
-}
-*/
-
-void StuurServo()
-{
-  int Delta = Bearing - Heading;
-
-  if (Delta > 180)  Delta -= 360;
-  if (Delta < -180) Delta += 360;
-
-  pos = 90 - Delta;
-
-  pos = constrain(pos, 0, 180);
-
-  pos_out = pos + Demping * (pos - pos_out);
-
-  Servo.write(pos_out);
 }
 
 
