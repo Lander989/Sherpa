@@ -81,3 +81,26 @@ Dit schema uitgewerkt in een eerste versie ziet er chaotisch uit. Maar alles is 
 <p align="center" >
   <img src="../img/EersteVersie.png" width="100%">
 </p>
+
+## Visualiseren van het traject
+<div style="display: flex; gap: 10px; align-items: center;">
+  <img src="../img/gps_traject_afbeelding_processing.png" style="height: 200
+  ; width: 100;" alt="Mirjan">
+</div>
+In de eerste fase van het project werd een visualisatie ontwikkeld in Processing. Hierbij werden GPS-datapunten handmatig geëxtraheerd uit Google Maps en ingelezen om het traject statisch uit te tekenen.<br>
+
+Omdat de ESP-32 fungeert als een lokale webserver en continu live-coördinaten doorstuurt, zijn we voor de definitieve opstelling overgestapt naar een dynamische, webgebaseerde (HTML) visualisatie. Dit maakt het mogelijk om de ontvangen data veel efficiënter en in real-time weer te geven.
+
+
+## Validatietest
+Om de effectiviteit, integratie en nauwkeurigheid van het systeem in de praktijk te verifiëren, is het traject fysiek afgelegd tijdens een veldtest.<br>
+De eerste GIF demonstreert de dynamische werking van de wijzer. Deze past zich real-time aan op basis van de actuele kijkrichting (heading) van het toestel ten opzichte van het volgende waypoint.
+<div style="display: flex; gap: 10px; align-items: center;">
+  <img src="../img/wijzer_draaien.gif" style="height: 200
+  ; width: 100;" alt="Mirjan">
+</div>
+
+De tweede GIF toont de navigatie door een scherpe bocht. Hierbij is te zien hoe de binnenkomende data van de ESP-32 nauwkeurig wordt geregistreerd op het webdashboard, terwijl de fysieke wijzer synchroon en correct het volgende waypoint aanduidt.
+<div style="display: flex; gap: 10px; align-items: center;">
+  <img src="../img/scherpe_hoek.gif" style="height: 2000; width: 1000;" alt="Mirjan">
+</div>
