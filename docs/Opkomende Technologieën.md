@@ -23,7 +23,7 @@ Productdoelstellingen:
 
 Dit heeft zich kortweg vertaald naar een mobiel navigatiesyteem dat met een wijzer de weg wijst doorheen een opgenomen traject. Op deze wijze wordt een blinde van punt naar punt doorheen de veiligste weg geleid. Hierover valt uitgebreid te lezen in GGO portie van deze github.
 
-### Opdracht
+## Opdracht
 ---
 
 Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
@@ -63,15 +63,14 @@ De meegeleverde voorbeeld code uit de bibliotheek is onbruikbaar, deze bevat gee
 #### GPS
 De gps is in staat om binnen de 2 meter zijn positie te bepalen. Dit coordinaat update constant. De bibliotheek TinyGPS++ bevat een bearing functie die bij ingave van twee coordinaten de bearing teruggeeft.
 
-### Inputs en outputs
---- 
+#### Inputs en outputs
 De gebruiker bestuurd het toestel met 2 knoppen. De knoppen zijn NO drukknopjes. We verbinden ze met pulldown weerstanden aan de microcontroller. 
 Het toestel bevat ook een trilmotor voor vibratiefeedback. De trilmotor wordt aangestuurd met een pwm signaal. Dit maakt het mogelijk om verschillende patronen af te spelen.
 
 
 
 ## Onderdelen en schakeling
-
+---
 Volgende afbeelding toont de schakeling schematisch weer.
 
 <p align="center">
@@ -83,9 +82,10 @@ Dit schema uitgewerkt in een eerste versie ziet er chaotisch uit. Maar alles is 
 </p>
 
 ## Visualiseren van het traject
+---
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src="../img/gps_traject_afbeelding_processing.png" style="height: 200
-  ; width: 100;" alt="Mirjan">
+  <img src="../img/gps_traject_afbeelding_processing.png" style="height: auto
+  ; width: auto;" alt="Mirjan">
 </div>
 In de eerste fase van het project werd een visualisatie ontwikkeld in Processing. Hierbij werden GPS-datapunten handmatig geëxtraheerd uit Google Maps en ingelezen om het traject statisch uit te tekenen.<br>
 
@@ -93,14 +93,19 @@ Omdat de ESP-32 fungeert als een lokale webserver en continu live-coördinaten d
 
 
 ## Validatietest
+---
 Om de effectiviteit, integratie en nauwkeurigheid van het systeem in de praktijk te verifiëren, is het traject fysiek afgelegd tijdens een veldtest.<br>
 De eerste GIF demonstreert de dynamische werking van de wijzer. Deze past zich real-time aan op basis van de actuele kijkrichting (heading) van het toestel ten opzichte van het volgende waypoint.
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src="../img/wijzer_draaien.gif" style="height: 200
-  ; width: 100;" alt="Mirjan">
+  <img src="../img/wijzer_draaien.gif" style="height: auto
+  ; width: auto;" alt="Mirjan">
 </div>
 
 De tweede GIF toont de navigatie door een scherpe bocht. Hierbij is te zien hoe de binnenkomende data van de ESP-32 nauwkeurig wordt geregistreerd op het webdashboard, terwijl de fysieke wijzer synchroon en correct het volgende waypoint aanduidt.
 <div style="display: flex; gap: 10px; align-items: center;">
-  <img src="../img/scherpe_hoek.gif" style="height: 2000; width: 1000;" alt="Mirjan">
+  <img src="../img/scherpe_hoek.gif" style="height: auto; width: auto;" alt="Mirjan">
 </div>
+
+### Noot inzake het gebruik van AI
+---
+In dit project werd Gemini Pro gebruikt bij het coderen van de visualisatie, zowel voor Processing als voor de finale HTML-website. Ook werd de tekst grammaticaal scherpgesteld door Gemini.
