@@ -1,8 +1,8 @@
 # Opkomende Technologieën
 ## Inleiding
 In kader van het vak opkomende technologieën (OT) werken we een MVP variant uit van de SHERPA wegwijzer uit project gebruiksgericht ontwerpen (GGO). in het vak OT is de onderbouwing uit GGO minder van toepassing. De nadruk ligt op het uitwerken van een technisch uitdagend prototype waarbij verschillende competenties worden getoest en samenkomen.
+
 ### GGO
----
 Het product en doelstellingen uit GGO zien er als volgt uit:
 
 **Product:** Navigatiehulpmiddel voor blinden en slechtzienden
@@ -24,7 +24,6 @@ Productdoelstellingen:
 Dit heeft zich kortweg vertaald naar een mobiel navigatiesyteem dat met een wijzer de weg wijst doorheen een opgenomen traject. Op deze wijze wordt een blinde van punt naar punt doorheen de veiligste weg geleid. Hierover valt uitgebreid te lezen in GGO portie van deze github.
 
 ## Opdracht
----
 
 Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
 
@@ -41,7 +40,6 @@ Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
 - Op afstand het systeem uitlezen en de data weergeven op een HMI: Connectiviteit wifi/bluethoot, dashbord waar data weergegeven wordt om troubleshooting te bevorderen.
 
 ### Richtingbepaling
----
 Doel
 
 De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: Hoe weet de wijzer naar waar hij moet wijzen? Volgende afbeelding illustreert hoe de hoek bepaald wordt. Het magnetisch noorder dient als nullijn. wijzersin loopt de hoek van 0 tot 360 graden op. Soms komt [0,180] en [-180,0] voor in de berekeningen. Onthoud dat de heading en bearing altijd genormaliseerd worden naar een waarde tussen de 0 en 360 graden. Het verschil tussen de heading en bearing noemen we delta. Met delta kan teta gevonden worden. Teta stuurt de hoek van de servo.
@@ -70,7 +68,6 @@ Het toestel bevat ook een trilmotor voor vibratiefeedback. De trilmotor wordt aa
 
 
 ## Onderdelen en schakeling
----
 Volgende afbeelding toont de schakeling schematisch weer.
 
 <p align="center">
@@ -82,18 +79,18 @@ Dit schema uitgewerkt in een eerste versie ziet er chaotisch uit. Maar alles is 
 </p>
 
 ## Visualiseren van het traject
----
 <div style="display: flex; gap: 10px; align-items: center;">
   <img src="../img/gps_traject_afbeelding_processing.png" style="height: auto
   ; width: auto;" alt="Mirjan">
 </div>
-In de eerste fase van het project werd een visualisatie ontwikkeld in Processing. Hierbij werden GPS-datapunten handmatig geëxtraheerd uit Google Maps en ingelezen om het traject statisch uit te tekenen.<br>
+In de eerste fase van het project werd een visualisatie ontwikkeld in Processing. Hierbij werden GPS-datapunten handmatig geëxtraheerd uit Google Maps en ingelezen om het traject statisch uit te tekenen.
+
+Het traject op de afbeelding komt zoals te zien niet volledig overeen met het traject op Google Maps. Dit komt door de platte 2D-weergave van onze kaart ten opzichte van de werkelijke 3D-kromming van de aarde, wat een verschuiving veroorzaakt. Daarnaast trekt onze weergave een rechte lijn tussen twee punten, waardoor bochten worden afgesneden
 
 Omdat de ESP-32 fungeert als een lokale webserver en continu live-coördinaten doorstuurt, zijn we voor de definitieve opstelling overgestapt naar een dynamische, webgebaseerde (HTML) visualisatie. Dit maakt het mogelijk om de ontvangen data veel efficiënter en in real-time weer te geven.
 
 
 ## Validatietest
----
 Om de effectiviteit, integratie en nauwkeurigheid van het systeem in de praktijk te verifiëren, is het traject fysiek afgelegd tijdens een veldtest.<br>
 De eerste GIF demonstreert de dynamische werking van de wijzer. Deze past zich real-time aan op basis van de actuele kijkrichting (heading) van het toestel ten opzichte van het volgende waypoint.
 <div style="display: flex; gap: 10px; align-items: center;">
@@ -106,6 +103,12 @@ De tweede GIF toont de navigatie door een scherpe bocht. Hierbij is te zien hoe 
   <img src="../img/scherpe_hoek.gif" style="height: auto; width: auto;" alt="Mirjan">
 </div>
 
-### Noot inzake het gebruik van AI
----
+## Kritische reflectie
+Tijdens de finale test bleken er toch wat onnauwkeurigheden naar boven te komen. Vooral bij de GPS, die maar accuraat is tot op 2 meter. Dit bracht vervelende situaties met zich mee, aangezien de punten die op Google Earth nog op het wandelpad lagen, zich tijdens de test soms in een gebouw of in de struiken bevonden.
+
+Voor het einddoel van de Sherpa 'het veilig navigeren van blinden en slechtzienden' vormt deze afwijking een kritiek punt.
+
+Een mogelijke oplossing is de overstap naar een dual-band GPS-module. Deze modules combineren meerdere frequenties, waardoor ze aanzienlijk accurater zijn en minder last hebben van signaalreflecties dicht bij gebouwen of bomen.
+
+## Noot inzake het gebruik van AI
 In dit project werd Gemini Pro gebruikt bij het coderen van de visualisatie, zowel voor Processing als voor de finale HTML-website. Ook werd de tekst grammaticaal scherpgesteld door Gemini.
