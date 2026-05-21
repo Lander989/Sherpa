@@ -41,7 +41,7 @@ Voor OT kijken we naar de technische uitdagingen. Dit zijn volgende punten:
 
 - Op afstand het systeem uitlezen en de data weergeven op een HMI: Connectiviteit wifi/bluethoot, dashbord waar data weergegeven wordt om troubleshooting te bevorderen.
 
-### Richtingbepaling
+## Richtingbepaling
 Doel
 
 De wijzer moet het volgende waypoint aanwijzen. Hier is de vraag: hoe weet de wijzer naar waar hij moet wijzen? De volgende afbeelding illustreert hoe de hoek bepaald wordt. Het magnetische noorden dient als nullijn. In wijzerszin loopt de hoek van 0 tot 360 graden op. Soms komen [0,180] en [-180,0] voor in de berekeningen. Onthoud dat de heading en bearing altijd genormaliseerd worden naar een waarde tussen 0 en 360 graden. Het verschil tussen de heading en bearing noemen we delta. Met delta kan theta gevonden worden. Theta stuurt de hoek van de servo.
@@ -54,7 +54,7 @@ Met een IMU bepalen we de heading. De bearing bepalen we aan de hand van de huid
   <em>Illustratie van heading, bearing, delta en theta.</em>
 </p>
 
-### Onderdelen
+## Onderdelen
 
 #### IMU
 We maken gebruik van een grove 9DOF-IMU. Deze sensor bevat een accelerometer, gyrometer en magnetometer.
@@ -84,6 +84,13 @@ Dit schema uitgewerkt in een eerste prototype ziet er chaotisch uit. Maar alles 
   <br>
   <em>Eerste werkende prototype van de schakeling.</em>
 </p>
+
+## Traject
+
+Tijdens het ontwikkelen van de prototypes maakten we gebruik van Google Earth om routes uit te stippelen. Deze route bestaat uit een lange lijst van latitude- en longitudecoördinaten. Het toestel weet wanneer een punt gepasseerd wordt en schakelt vervolgens over naar het volgende waypoint.
+
+Het is de bedoeling dat de gebruiker later zelf trajecten kan opnemen. Hierbij wordt de lijst met punten automatisch aangemaakt door het toestel terwijl een traject wordt afgelegd. Om de ongeveer 2 meter zou dan een nieuw punt worden opgeslagen. Deze functionaliteit werd echter niet verder uitgewerkt wegens tijdsgebrek. 
+
 
 ## Visualiseren van het traject
 <p align="center">
