@@ -1,26 +1,11 @@
-# Develop 1
+# Develop
 
-## Deel 1 (N=5)
-Inleiding
-In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele architectuur. Door het product op te splitsen in verschillende deelaspecten ontstaat meer inzicht in hoe het systeem zal werken en welke onderdelen nodig zijn. Daarnaast worden er testen uitgevoerd samen met de doelgroep om de onderzoeksvragen te beantwoorden.
+## Develop 1 (N=5)
 
----
-### Onderzoeksvragen
-
-
-* Wat  betekend de studie van Liu et al. (2021) voor het concept?
-
-* Wat is er nodig zodat het wijzerconcept zekerheid biedt aan de gebruiker?
-
-* Welke feedback uit de systeemarchitectuur kunnen via trilsignalen overgebracht worden?
+In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele architectuur. Door het product op te splitsen in verschillende deelaspecten ontstaat meer inzicht in hoe het systeem zal werken en welke onderdelen nodig zijn. Daarnaast worden er testen uitgevoerd samen met de doelgroep om de onderzoeksvragen op basis van de requierments te beantwoorden.
 
 ---
-### Scenario’s
 
-In de definitionfase werd ervoor gekozen het product te ontwikkelen voor minder zelfredzame blinden, met als doel hen te helpen bij het aanleren en onderhouden van trajecten. Tijdens de developfase kwam een voorbeeldscenario naar voren dat de inzetbaarheid van het product aantoont.
-Zo is Dirk bijvoorbeeld niet in staat om een bepaald traject van buiten te leren. Het traject is namelijk niet voldoende aangepast voor blinden en bevat enkele open ruimtes waar geen duidelijke referentiepunten aanwezig zijn. In zulke situaties kan de wegwijzer extra ondersteuning en oriëntatie bieden tijdens het volgen van een route. Het ondersteunen van gebruikers zoals Dirk bij het afleggen van zulke trajecten vormt een belangrijke doelstelling van het project.
-
----
 ### Architectuur
 
 Het systeem wordt opgesplitst in twee grote onderdelen: de recordfase en de playfase. Voor beide fases werd een MVP gedefinieerd.
@@ -42,8 +27,24 @@ In het schema worden de verschillende fases en mogelijke manieren waarop deze ku
   <img src="../img/systeemarchitectuur~~~user flow.png" width="100%">
 </p>
 
-### Interactive prototypen
 ---
+
+### Onderzoeksvragen
+
+D3.1 Het systeem geeft continu de huidige looprichting tactiel weer.
+
+* Wat  betekend de studie van Liu et al. (2021) voor het concept?
+
+D3.4 De gebruiker legt minder bekende trajecten af met zelfvertrouwen dankzij het systeem.
+* Wat is er nodig zodat het wijzerconcept zekerheid biedt aan de gebruiker?
+
+D5.1 De UI is volledig bedienbaar zonder visuele informatie (geschikt voor blinden en slechtzienden).
+* Welke feedback uit de systeemarchitectuur kunnen via trilsignalen overgebracht worden?
+
+---
+
+### Interactive prototypen
+
 De focus lag in deze fase bij het uitwerken van de wijzer. Hierbij werd vertrokken van het prototype uit de vorige fase. Daaruit ontstonden zes verschillende varianten. Deze werden eerst intern geëvalueerd en vervolgens herwerkt en samengevoegd in een testopstelling waarmee we naar onze doelgroep trokken. Deze opstelling wordt gestuurd aan de hand van een RC-controller.
 
 
@@ -131,8 +132,12 @@ ID   |                                                                          
 | 4.3  | De trilpatronen volgen de bestaande en vertrouwde tactiele semantiek van blindengeleidetegels                          | Develop 1  |
 
 --- 
-## Deel 2 (N=2)
-Inleiding
+
+
+## Develop 2 (N=2)
+
+### Inleiding
+
 In deze fase worden zowel de ergonomie van de controller onderzocht als de nodige knoppen en de plaats van deze knoppen op het product.
 Aan de hand van voor onderzoek en het raadplegen van bestaande studies werden verschillende prototypes van het product gerealiseerd. Deze prototypes werden dan getest bij de doelgroep.
 
