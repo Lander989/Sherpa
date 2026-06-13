@@ -45,14 +45,15 @@ Een cruciale randvoorwaarde is dat de oplossing functioneert als aanvulling op d
   <img src="img/GIF render to wire.gif" width="100%">
 </p>
 
-Semester 1:
+##### Semester 1:
 
 Als we terugkijken op het proces van het eerste semester, was de keuze om te pivoten van de tactiele matrix naar de pijl zonder twijfel het kantelpunt. We hebben in het begin veel tijd gestoken in het matrix-concept, om er tijdens de Think Aloud-testen achter te komen dat dit cognitief veel te zwaar was voor de gebruiker. Deze validatieslag was cruciaal om te beseffen dat de gebruiker eigenlijk geen kaart wil ontcijferen, maar vooral op zoek is naar geruststelling en eenvoudige richting.
 
 Toch moeten we kritisch zijn op onze validatie in de laatste fase. De Wizard of Oz-methode in wave 2 was perfect om het gevoel van de pijl te testen, maar het verhult de technische realiteit. Omdat wij zelf de pijl bestuurden, hielden we geen rekening met factoren zoals GPS-signaalverlies of onnauwkeurigheid in een stedelijke omgeving. We hebben dus wel de gebruikerservaring (UX) gevalideerd, maar de technische haalbaarheid is een risico dat we doorschuiven naar het volgende semester.
 
 Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoals Pieter-Jan, zijn al erg zelfstandig en mobiel. Hierdoor bestaat het risico dat we een oplossing hebben ontworpen voor een ‘best-case scenario’. Het is voor ons een belangrijk werkpunt om in de toekomst te testen met mensen die onzekerder zijn in het verkeer, om te zien of het ‘Record & Replay’-concept hen ook voldoende vertrouwen biedt.
-
+##### Semester 2 
+De input van mensen uit de doelgroep kan niet onderschat worden. Op het einde van het project zijn we contact verloren met een paar mensen van onze doorgroep. Dit was zeer nadelig voor zowel onderzoek als het maken van designbeslissingen.
 
 ## Noot inzake het gebruik van AI
 Binnen dit project is Gemini ingezet als ondersteunende AI-tool, met een strikt afgebakende rol:
