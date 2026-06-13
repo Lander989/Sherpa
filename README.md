@@ -53,10 +53,13 @@ Toch moeten we kritisch zijn op onze validatie in de laatste fase. De Wizard of 
 
 Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoals Pieter-Jan, zijn al erg zelfstandig en mobiel. Hierdoor bestaat het risico dat we een oplossing hebben ontworpen voor een ‘best-case scenario’. Het is voor ons een belangrijk werkpunt om in de toekomst te testen met mensen die onzekerder zijn in het verkeer, om te zien of het ‘Record & Replay’-concept hen ook voldoende vertrouwen biedt.
 ##### Semester 2 
-Aan het einde van de definitiefase werd geconcludeerd dat ons product zich meer moet focussen op blinden en slechtzienden die minder kapabel en zelfredzaam zijn. Jammer genoeg zijn dit ook de mensen die het moeilijkst te bereiken zijn. Hierdoor is het ons niet gelukt om dit soort mensen aan te spreken.
-De input van mensen uit de doelgroep kan niet onderschat worden. Op het einde van het project zijn we contact verloren met een paar mensen van onze doorgroep. Dit was zeer nadelig voor zowel onderzoek als het maken van designbeslissingen.
-De einddoelen van het project zijn ook gelaas niet volledig gehaald. Tijdens de finaletest bleken er toch wat onnauwkeurigheden naar boven te komen, vooral bij de GPS. Het product heeft een goede start, maar is nog lang niet klaar om op de markt te komen.  
-Door dit project hebben we wel de kans gekregen om in een nieuwe wereld te stappen en toffe mensen te ontmoeten. Het heeft ons ook attenter gemaakt op hoe de wereld zich aanpast en gedraagt tegenover de blinde en slechtziende bevolkingsgroep.
+Aan het einde van de definitiefase concludeerden we dat ons product zich meer moest richten op blinden en slechtzienden die minder zelfredzaam en onzekerder in het verkeer zijn. In de praktijk bleek deze specifieke subdoelgroep echter uiterst moeilijk te bereiken, mede doordat zij zich minder vaak aansluiten bij belangenverenigingen. Hierdoor is het ons helaas niet gelukt om hen actief in ons verdere ontwerpproces te betrekken.
+
+De waarde van continue, directe input vanuit de doelgroep kan simpelweg niet overschat worden. Dat we naar het einde van het project toe het contact met enkele van onze kerngebruikers verloren, was dan ook een flink nadeel. Dit had een direct negatieve impact op het afronden van ons onderzoek en bemoeilijkte het nemen van finale designbeslissingen.
+
+Deze factoren hebben er mede toe geleid dat we onze vooropgestelde einddoelen niet volledig hebben behaald. Tijdens de finale outdoortesten kwamen bovendien technische pijnpunten aan het licht, waarbij vooral de onnauwkeurigheid van de GPS een aanzienlijk struikelblok vormde. Hoewel het huidige prototype een sterke basis vormt en de absolute meerwaarde van het concept aantoont, is het product technisch gezien nog lang niet klaar voor een marktintroductie.
+
+Desondanks kijken we bijzonder positief terug op dit project. We hebben de kans gekregen om ons onder te dompelen in een voor ons compleet nieuwe wereld en we hebben enorm inspirerende mensen ontmoet. Bovenal heeft het ons als ontwerpers een veel scherpere en kritische blik gegeven op de manier waarop de maatschappij—en onze fysieke leefomgeving—zich al dan niet aanpast aan personen met een visuele beperking.
 
 ## Noot inzake het gebruik van AI
 Binnen dit project is Gemini ingezet als ondersteunende AI-tool, met een strikt afgebakende rol:
