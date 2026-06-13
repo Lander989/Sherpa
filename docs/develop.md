@@ -1,137 +1,154 @@
-# Develop
 
-## Develop 1 (N=5)
+# Develop 1 (N = 5)
 
-In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele architectuur. Door het product op te splitsen in verschillende deelaspecten ontstaat meer inzicht in hoe het systeem zal werken en welke onderdelen nodig zijn. Daarnaast worden er testen uitgevoerd samen met de doelgroep om de onderzoeksvragen op basis van de requierments te beantwoorden.
+In deze eerste ontwikkelingsfase wordt het concept vertaald naar een functionele architectuur. Door het product op te splitsen in verschillende deelaspecten ontstaat meer inzicht in hoe het systeem zal werken en welke onderdelen nodig zijn. Daarnaast worden testen uitgevoerd met de doelgroep om de onderzoeksvragen, gebaseerd op de design requirements, te beantwoorden.
 
----
+## Architectuur
 
-### Architectuur
+Het systeem wordt opgesplitst in twee grote onderdelen: de **recordfase** en de **playfase**. Voor beide fases werd een Minimum Viable Product (MVP) gedefinieerd.
 
-Het systeem wordt opgesplitst in twee grote onderdelen: de recordfase en de playfase. Voor beide fases werd een MVP gedefinieerd.
-#### Recordfase
+### Recordfase
 
 * Het toestel kan een traject opnemen terwijl de gebruiker het traject aanleert.
+* Het traject kan worden opgeslagen.
 
-* Het traject kan op een bepaalde manier worden opgeslagen.
-
-#### Playfase
+### Playfase
 
 * De gebruiker kan een opgeslagen traject ophalen.
-
 * Het toestel begeleidt de gebruiker doorheen het traject.
 
-In het schema worden de verschillende fases en mogelijke manieren waarop deze kunnen werken in kaart gebracht. 
+Onderstaand schema toont de verschillende fases en hun onderlinge relaties.
 
 <p align="center">
   <img src="../img/systeemarchitectuur~~~user flow.png" width="100%">
 </p>
 
----
+## Onderzoeksvragen
 
-### Onderzoeksvragen
+De onderzoeksvragen dienen om de design requirements te vertalen naar concrete productspecificaties.
 
-D3.1 Het systeem geeft continu de huidige looprichting tactiel weer.
+| Requirement                                                                                    | Onderzoeksvraag                                                                           |
+| ---------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| **D3.1** Het systeem geeft continu de huidige looprichting tactiel weer.                       | Wat betekent de studie van Liu et al. (2021) voor het concept?                            |
+| **D3.4** De gebruiker legt minder bekende trajecten af met zelfvertrouwen dankzij het systeem. | Wat is er nodig zodat het wijzerconcept voldoende zekerheid biedt aan de gebruiker?       |
+| **D5.1** De UI is volledig bedienbaar zonder visuele informatie.                               | Welke elementen uit de systeemarchitectuur kunnen via trilsignalen worden gecommuniceerd? |
 
-* Wat  betekend de studie van Liu et al. (2021) voor het concept?
+## Interactieve prototypes
 
-D3.4 De gebruiker legt minder bekende trajecten af met zelfvertrouwen dankzij het systeem.
-* Wat is er nodig zodat het wijzerconcept zekerheid biedt aan de gebruiker?
-
-D5.1 De UI is volledig bedienbaar zonder visuele informatie (geschikt voor blinden en slechtzienden).
-* Welke feedback uit de systeemarchitectuur kunnen via trilsignalen overgebracht worden?
-
----
-
-### Interactive prototypen
-
-De focus lag in deze fase bij het uitwerken van de wijzer. Hierbij werd vertrokken van het prototype uit de vorige fase. Daaruit ontstonden zes verschillende varianten. Deze werden eerst intern geëvalueerd en vervolgens herwerkt en samengevoegd in een testopstelling waarmee we naar onze doelgroep trokken. Deze opstelling wordt gestuurd aan de hand van een RC-controller.
-
+De focus lag in deze fase op de verdere uitwerking van de wijzer. Vanuit het prototype uit de vorige fase werden zes varianten ontwikkeld. Na een interne evaluatie werden deze herwerkt en samengevoegd tot een testopstelling die werd aangestuurd met een RC-controller.
 
 <p align="center">
   <img src="../img/overzicht prototypes.png" width="100%">
 </p>
 
----
-### User testing
+## User Testing
 
-Voor de testen werd een protocol en rapport opgesteld. Deze zijn hier te lezen.
+Voor de testen werden een protocol en een rapport opgesteld.
+
 * [protocol](<../reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
 * [rapport](<../reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
+
 ### Doel van de testen
-Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten (variërend van volledig blind tot restvisus) om:
 
-* De duidelijkste manier van tactiele richtingsaansturing te bepalen (cirkeltest).
+Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten, variërend van volledig blind tot personen met restvisus.
 
-* Het beste prototype te testen in een realistische wandelcontext (trajectaanduiding).
+De onderzoeken hadden als doel om:
 
-* De verstaanbaarheid van trilsignalen als feedback te evalueren.
+1. De duidelijkste vorm van tactiele richtingsaansturing te bepalen.
+2. Het meest geschikte prototype te evalueren in een realistische wandelcontext.
+3. De verstaanbaarheid van trilsignalen als feedbackmechanisme te onderzoeken.
 
-
-
-### Test 1 – Cirkeltest (richtingsnauwkeurigheid)
+# Test 1 – Cirkeltest
 
 <div style="display: flex; gap: 10px; align-items: center;">
   <img src="../img/Mirjan_small.gif" style="height: 500; width: auto;" alt="Mirjan">
   <img src="../img/Cirkel_Test.jpg" style="height: 400; width: auto;" alt="Cirkel Test">
 </div>
 
+## Opzet
 
+De proefpersonen stonden in het midden van een cirkel die was onderverdeeld in sectoren van 30°. Drie prototypes (driehoek, draaiwijzer en schijf met balk) werden draadloos aangestuurd. De gebruiker voelde de stand van de wijzer, draaide zich naar de vermeende richting en wees met een witte stok. De afwijking ten opzichte van de doelrichting werd geregistreerd.
 
+## Resultaten
 
-#### Opzet
-Proefpersonen stonden in het midden van een cirkel (ingedeeld in sectoren van 30°). Drie prototypes (driehoek, draaiwijzer, schijf met balk) werden draadloos aangestuurd. De gebruiker voelde de stand, draaide zich naar de vermeende richting en wees met een witte stok. De afwijking werd geregistreerd.
+### Referentie en positie
 
-#### Resultaten
-*  De test was waardevol voor inzicht in leercurve en gebruiksgemak, maar te onnauwkeurig voor harde conclusies binnen een marge van 30°.
-*  Er was geen eenduidige winnaar: de voorkeuren waren sterk individueel bepaald.
-*  De testpersonen overcompenseerden hun kijkrichting wanneer de pijl van richting veranderde stilstond. De pijl die terugkeert naar 0 bij een correcte richting wordt verkeerd geïnterpreteerd.
+Bij versie C trad een omgekeerd effect op. De pijl wees naar links, terwijl de testpersoon naar rechts draaide. Drie van de vijf testpersonen interpreteerden de stilstaande pijl als richtingaanwijzer en het draaiende element als referentie.
 
+Mark, die nog over restvisus beschikt, scoorde goed met versie C. Dit was de enige versie met voldoende visueel contrast.
 
+Bij versie B werden bewegend element en referentiepunt omgewisseld. Dit leverde geen interpretatieproblemen op.
 
-### Test 2 – Trajectaanduiding (wandeltest)
-#### Opzet
-Met de beste prototypes (driehoek en draaiwijzer) werd een wandelparcours met bochten en rechte stukken afgelegd. Observaties richtten zich op interactie, verstaanbaarheid, bochtengedrag en zelfzekerheid.
-#### Resultaten
+Bij versie A ontbrak een vast referentiepunt, wat resulteerde in minder nauwkeurige positionering.
 
-* Driehoek (3/5 voorkeur): functioneerde goed, maar er was behoefte aan een duidelijk referentiepunt (tijdelijk opgelost met tape).
+### Zelfzekerheid
 
-* Draaiwijzer (2/5 voorkeur): werd intuïtief gebruikt, maar het verschil tussen het draaiend deel en het referentiepunt moet duidelijker worden aangegeven.
+Versie A gaf gebruikers het meeste vertrouwen, maar leidde tegelijk tot de meeste fouten. Een grotere pijl lijkt dus meer vertrouwen te creëren, ongeacht de daadwerkelijke nauwkeurigheid.
 
-* Houding: 3/5 hielden het prototype correct vast; twee hielden het omgekeerd (pijl naar de grond), wat wijst op nood aan een ergonomische vormgeving.
+### Belangrijkste bevindingen
 
-* Eén respondent met Parkinson gebruikte haar wijsvinger om de pijl af te tasten in plaats van de duim.
+* Een referentiepunt is noodzakelijk.
+* Het referentiepunt bevindt zich best achter de pijl.
+* Een grotere pijl wordt duidelijker ervaren.
+* Extra contrast verhoogt de bruikbaarheid voor slechtzienden.
 
-* Kleine bijsturingen werden beter geïnterpreteerd dan grote.
+### Evaluatie van de test
 
+De cirkeltest leverde waardevolle inzichten op voor de leercurve en het gebruikersvertrouwen. De opstelling was echter niet nauwkeurig genoeg om harde uitspraken te doen over een richtingsnauwkeurigheid binnen 30°.
 
-Tijdens een van de testen werd volgende opmerking gegeven:
->Chris: "Kom maar eens mee naar het Citadelpark, dan vind ik Misschien wel mijn weg terug".
+#### Beperkingen
 
-Wat aantoont dat de persoon vertrouwen heeft in het toestel.
+* **Onderzoekersbias:** timing van metingen was niet altijd consistent.
+* **Resolutie:** de positie van deelnemers kon niet altijd exact worden afgelezen.
 
+# Test 2 – Trajectaanduiding
 
-### Test 3 – Vibratiefeedback
-#### Opzet
-Tijdens de wandeling werden trilsignalen gegeven met vaste betekenissen (start, herkenningspunt, waarschuwing, stop). Reactietijd en interpretatiefouten werden genoteerd.
-#### Resultaten
-•	Eenvoudige signalen (lange trilling voor start/stop) werden goed begrepen.
+## Opzet
 
-•	Complexere patronen (zoals aantal pulsen) zorgden voor verwarring en fouten.
+Met de twee best presterende prototypes (driehoek en draaiwijzer) werd een wandelparcours met rechte stukken en bochten afgelegd.
 
----
-### Design requirements
+## Resultaten
 
+### Resultaten
 
-ID   |                                                                                                                      | Fase       |
-|------|--------------------------------------------------------------------------------------------------------------------------|------------|
-| 2.11 | De tactiele richtingaanwijzer bevindt zich op een locatie die een neutrale, ontspannen polshouding toelaat tijdens het wandelen | Develop 1  |
-| 3.5  | Het toestel is accuraat genoeg om de gebruiker op een veilig pad te houden en te begeleiden naar herkenningspunten       | Develop 1  |
-| 1.7  | De gebruiker moet bevestiging krijgen wanneer hij correct georiënteerd is                                                | Develop 1  |
-| 4.2  | Het wijzersysteem bevat een duidelijk nulpunt of referentie                                                             | Develop 1  |
-| 4.3  | De trilpatronen volgen de bestaande en vertrouwde tactiele semantiek van blindengeleidetegels                          | Develop 1  |
+- **Driehoek (3/5 voorkeur):** functioneerde goed, maar er was behoefte aan een duidelijk referentiepunt. Dit werd tijdens de test tijdelijk opgelost met tape.
+- **Draaiwijzer (2/5 voorkeur):** werd intuïtief gebruikt, maar het onderscheid tussen het draaiende deel en het referentiepunt moet duidelijker worden aangegeven.
+- **Houding:** 3 van de 5 deelnemers hielden het prototype correct vast. Twee deelnemers hielden het toestel omgekeerd (met de pijl naar beneden gericht), wat wijst op de noodzaak van een meer ergonomische vormgeving.
+- **Parkinson:** één respondent met Parkinson gebruikte haar wijsvinger om de pijl af te tasten in plaats van haar duim.
+- **Richtingscorrecties:** kleine richtingsaanpassingen werden beter geïnterpreteerd dan grote richtingsveranderingen.
 
---- 
+### Opmerking van een deelnemer
+
+Tijdens een van de testen werd de volgende opmerking gemaakt:
+
+> *"Kom maar eens mee naar het Citadelpark, dan vind ik misschien wel mijn weg terug."* — Chris
+
+Deze uitspraak suggereert dat de deelnemer vertrouwen had in het toestel en de potentie ervan zag voor gebruik in een reële navigatiecontext.
+
+# Test 3 – Vibratiefeedback
+
+## Opzet
+
+Tijdens de wandeling werden trilsignalen met vaste betekenissen aangeboden: start, herkenningspunt, waarschuwing en stop.
+
+## Resultaten
+
+* Lange trillingen voor start en stop werden correct geïnterpreteerd.
+* Complexere patronen veroorzaakten verwarring en interpretatiefouten.
+
+### Belangrijkste bevinding
+
+Complexere signalen vereisen bijkomende verduidelijking of training.
+
+## Nieuwe Design Requirements
+
+| ID   | Design Requirement                                                                                                                 |
+| ---- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| D5.6 | De tactiele richtingaanwijzer bevindt zich op een locatie die een neutrale en ontspannen polshouding toelaat tijdens het wandelen. |
+| D3.5 | Het toestel is accuraat genoeg om de gebruiker op een veilig pad te houden en te begeleiden naar herkenningspunten.                |
+| D3.2 | De gebruiker krijgt bevestiging wanneer hij correct georiënteerd is.                                                               |
+| D3.3 | Het wijzersysteem bevat een duidelijk nulpunt of referentiepunt.                                                                   |
+| D5.4 | De trilpatronen volgen de bestaande en vertrouwde tactiele semantiek van blindengeleidetegels.                                     |
 
 
 ## Develop 2 (N=2)
