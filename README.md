@@ -40,6 +40,11 @@ Een cruciale randvoorwaarde is dat de oplossing functioneert als aanvulling op d
 6. [Bill of materials](./docs/bom.md)
 7. [Design Requirements](./docs/design_requirements.md)
 ## Kritische reflectie
+
+<p align="center">
+  <img src="img/GIF render to wire.gif" width="100%">
+</p>
+
 Semester 1:
 
 Als we terugkijken op het proces van het eerste semester, was de keuze om te pivoten van de tactiele matrix naar de pijl zonder twijfel het kantelpunt. We hebben in het begin veel tijd gestoken in het matrix-concept, om er tijdens de Think Aloud-testen achter te komen dat dit cognitief veel te zwaar was voor de gebruiker. Deze validatieslag was cruciaal om te beseffen dat de gebruiker eigenlijk geen kaart wil ontcijferen, maar vooral op zoek is naar geruststelling en eenvoudige richting.

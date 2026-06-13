@@ -334,3 +334,33 @@ ook hier zijnde onderzoeks vragen gebaseerd op de design requirements:
 
 | Requirement | Onderzoeksvraag |
 |------------|----------------|
+### CMF onderzoek 
+Het voledige onderzoek is te lezen in het protokol en rapport van deze fase.
+
+##### Doel van het onderzoek
+
+CMF (Color, Material, Finish) en marktpositie: onderzoeken welke kleuren, materialen en afwerkingen het meest geschikt zijn en hoe potentiële gebruikers het product in de markt zien.
+
+<p align="center">
+  <img src="../img/IMG20260521102232.jpg" width="75%">
+</p>
+
+Voor het CMF-onderzoek kregen respondenten verschillende referentieproducten (zoals scheerapparaten, controllers en tandenborstels) in willekeurige volgorde in handen. Ze werden bevraagd over onder andere:
+
+* comfort en grip
+* materiaalgevoel
+* herkenbaarheid van knoppen
+* kleurcontrast
+* geschiktheid voor langdurig gebruik
+* Belangrijkste bevindingen
+
+Uit de interviews kwamen de volgende conclusies naar voren:
+
+Vormgeving: de vorm moet intuïtief aangeven hoe het product vastgehouden moet worden. De richting van de wijzer moet duidelijk zijn en knoppen moeten gemakkelijk voelbaar en herkenbaar zijn door reliëf of een afwijkende vorm.
+Kleurgebruik: kleur moet een functionele rol spelen, bijvoorbeeld om knoppen beter zichtbaar te maken en het product gemakkelijker terug te vinden voor slechtziende gebruikers. Hoog contrast wordt als belangrijk beschouwd.
+Materiaal: omdat het product buiten gebruikt wordt en schokken moet kunnen weerstaan, zijn sterke en impactbestendige materialen gewenst. Een combinatie van een harde kern met een rubberachtige buitenlaag werd door respondenten als comfortabel en praktisch ervaren.
+Afwerking: een satijnen afwerking kreeg de voorkeur. Glossy oppervlakken werden als glad ervaren en matte oppervlakken zouden sneller vuil worden. Gladde knoppen werden positief beoordeeld.
+
+##### Marktpositie
+
+De respondenten zagen potentieel in SHERPA en zouden overwegen het te kopen als het een afgewerkt product was. Een mogelijke terugbetaling als medisch hulpmiddel zou de aantrekkelijkheid verhogen, terwijl een verplicht abonnement voor updates eerder negatief werd beoordeeld. Daarnaast kwam de vraag naar voren wie aansprakelijk is bij ongevallen tijdens het gebruik, dit vraagt verder juridisch onderzoek .
