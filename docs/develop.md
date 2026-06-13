@@ -325,3 +325,116 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 
 #### Conclusie
 - Eindproduct moet robuust en kwalitatief aanvoelen.
+
+## Nieuwe Design Requirements
+
+| ID   | Design Requirement |
+|------|--------------------|
+| D3.4 | Het ontwerp communiceert visueel en tactiel een gevoel van stevigheid en duurzaamheid. |
+| D5.7 | Het toestel past in een broekzak. |
+| D5.8 | De gebruiker heeft vertrouwen dat het toestel niet uit de hand kan vallen tijdens gebruik. |
+
+
+## Develop 3 (N = 2)
+
+### Inleiding
+
+In deze fase worden twee onderdelen onderzocht. Het eerste deel gaat in op CMF en de marktpositie van het product. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
+
+---
+
+### Onderzoeksvragen
+
+**CMF & marktpositie**
+- Hoe ziet de afwerking van het product eruit in termen van kleur, materiaal en afwerking?
+- Hoe wordt het product gepositioneerd — als herkend hulpmiddel of als gadget?
+- Hoeveel wil een gebruiker betalen?
+- Wat is de mening van de doelgroep over het sociaal comfort van het product?
+
+**Overkoepelende praktijktest**
+- Hoe presteert het product in de praktijk, met de variabelen en onzekerheden van een echte omgeving?
+
+---
+
+### Testomgeving en setup
+
+Twee trajecten werden geselecteerd op basis van situaties die tijdens de definitiefase door de deelnemers werden aangehaald. Beide bevatten uitdagingen die vaak voorkomen bij zelfstandig navigeren, zoals het oversteken van open ruimtes, het herkennen van oriëntatiepunten en het vinden van zebrapaden.
+
+**Traject Dirk — Kortrijk**
+Dirk gaf aan dat hij graag zelfstandig naar het zwembad zou gaan. Het traject tussen bushalte Kortrijk Weide en de ingang van het zwembad vormt een uitdaging door open ruimtes en zebrapaden. Herkenningspunten zijn onder andere paaltjes, een tunnelwand, goten en betonnen randen.
+
+**Traject Chris — Gullegem**
+Chris beschreef een traject tussen Gent-Sint-Pieters en het MSK. Om praktische redenen werd een vergelijkbaar traject uitgewerkt in Gullegem, met herkenningspunten zoals stoepranden, riooldeksels, verlaagde boordstenen, grasranden en straatmeubilair.
+
+---
+
+### Prototype
+
+Het werkende prototype bestond uit de volgende componenten:
+
+- Een tactiele wegwijzer
+- Een controledoos gedragen rond de nek
+- Een webdashboard voor trajectmonitoring
+- GPS-besturing met mogelijkheid tot manuele overname
+
+Het systeem gaf trilsignalen bij het bereiken van herkenningspunten. Gesproken instructies werden tijdens de test door een begeleider gegeven.
+
+---
+
+### Testverloop
+
+Voor beide trajecten werd hetzelfde scenario gevolgd:
+
+1. De deelnemer wordt naar het startpunt gebracht.
+2. Het prototype wordt aangebracht en kort toegelicht.
+3. De deelnemer start het traject.
+4. De wegwijzer geeft richtingsinformatie.
+5. Op vooraf bepaalde herkenningspunten worden trilsignalen en gesproken instructies gegeven.
+6. Observaties worden geregistreerd gedurende het volledige traject.
+
+---
+
+### Resultaten
+
+#### Wegwijzing
+
+Op het eerste traject werkte het GPS-prototype aanvankelijk goed en werden de eerste herkenningspunten aantoonbaar bereikt. Na verloop van tijd begon de GPS te driften, waardoor we overschakelden naar manuele besturing. Hiermee werden de overige herkenningspunten zonder problemen bereikt. Eén interventie was nog nodig ter hoogte van herkenningspunt 3, waar een auto de deelnemer afleiding veroorzaakte.
+
+Bij de tweede test werkte de GPS van bij het begin niet correct en schakelden we onmiddellijk over naar manuele sturing. Het traject in Gullegem verliep vlotter door het grotere aantal volglijnen. De deelnemer concentreerde zich vooral op het toestel op stukken zonder volglijn.
+
+#### Aangeleerde gewoontes
+
+Deelnemers verkozen op momenten hun eigen intuïtie boven de aanwijzingen van de wijzer. Zo volgden ze de stoeprand in plaats van de instructie om rechtdoor te gaan, en lieten ze een herkenningspunt los toen de wijzer haaks op de stoeprand wees. Dit bevestigt dat het toestel de aangeleerde mobiliteitstechnieken — zoals volglijnen en herkenningspunten — moet ondersteunen en niet doorkruisen.
+
+#### Spraakinstructies
+
+Spraakinstructies gaven duidelijk het meeste vertrouwen, meer dan de wijzer alleen. Op stukken met een volgbare route werd de wijzer nauwelijks gebruikt. Tussen H5, H6 en H7, waar geen volglijn beschikbaar was, schakelde de deelnemer volledig over op het wijzersysteem. Hier was een korte aarzeling zichtbaar, waarna de deelnemer de aanwijzingen van het systeem volgde.
+
+#### Trilsignalen
+
+De trilsignalen waren moeilijk te observeren in hun effect. Ongeacht het signaal stopte de gebruiker steeds en wachtte op de gesproken instructie. Tijdens de debrief gaven deelnemers aan dat ze de aard van het signaal niet actief interpreteren — enkel de aanwezigheid ervan volstaat als attentietrigger. Dit suggereert dat één uniform attentiesignaal voldoende is.
+
+#### Trajectvoorbereiding
+
+De trajecten werden uitgestippeld op basis van Google Earth en lokale kennis. De GPS-problemen roepen de vraag op of het verschil tussen Google Earth en de werkelijke situatie ter plaatse hieraan bijdraagt. Het effectief afwandelen van een traject samen met een begeleider blijkt noodzakelijk om accurate en actuele trajecten op te bouwen.
+
+#### Debrief
+
+Een deelnemer gaf spontaan aan geïnteresseerd te zijn in het toestel voor dagelijks gebruik. Een andere deelnemer merkte op dat de wijzer soms onduidelijk bewoog, wat te wijten is aan inconsistente manuele besturing door de onderzoeker.
+
+---
+### Succes metrics
+
+| ID | Requirement | Meetcriterium | Traject 1 (Dirk) | Traject 2 (Chris) | Resultaat |
+|----|-------------|---------------|-------------------|-------------------|-----------|
+| D1.1 | Het systeem begeleidt de gebruiker doorheen een traject zodat elk herkenningspunt aantoonbaar bereikt wordt. | ≥ 100% van de herkenningspunten correct bereikt (observatie per punt: ja/nee). | H2 en H3 niet bereikt | H1 t.e.m. H6 bereikt | ⚠️ Gedeeltelijk |
+| D1.2 | Het systeem geeft eenduidige feedback bij correcte richting, foute richting, herkenningspunten en gevaarlijke locaties. | Deelnemer reageert correct op elk feedbacksignaal; ≥ 90% correcte reacties per sessie. | H1 t.e.m. H8 | H1 t.e.m. H6 | ✅ Voldaan |
+| D1.3 | De gebruiker toont geen verwarring bij de start van het traject. | Geen observeerbare verwarring (pauze > 10 s, foutieve richting, verbale twijfel) in de eerste 60 s. | Geen verwarring bij start, wel later door aangeleerde gewoontes | Geen verwarring bij start, wel later door aangeleerde gewoontes | ⚠️ Gedeeltelijk |
+| D4.1 | Het gebruik van de witte stok wordt niet belemmerd door het product. | 0 obstakelcontacten bij ≥ 3 deelnemers tijdens trajecttest. | ✅ Voldaan | ✅ Voldaan | ✅ Voldaan |
+| D5.5 | Het systeem is bruikbaar na een enkele uitlegsessie van ≤ 20 minuten. | Deelnemer voltooit het parcours met ≤ 2 begeleidersinterventies na max. 20 min uitleg. | ❌ Niet voldaan | ✅ Voldaan | ⚠️ Gedeeltelijk |
+| D3.4 | De gebruiker legt minder bekende trajecten af met zelfvertrouwen dankzij het systeem. | BERT: Onzeker ←1·2·3·4·5·6·7→ Zelfzeker — drempel: ≥ +2 t.o.v. score zonder toestel. | Zonder: 2 · Met: 5 · Verschil: +3 | Zonder: 4 · Met: 6 · Verschil: +2 | ✅ Voldaan |
+
+
+### Samenvatting
+
+De GPS-technologie bleek onvoldoende betrouwbaar voor beide trajecten: manuele besturing werkte telkens wel. Spraakinstructies zijn de sterkste vertrouwensgever, de wijzer wordt vooral ingezet waar geen volglijn beschikbaar is. Trilsignalen functioneren puur als attentietrigger en niet als informatiedrager, wat het gebruik van één uniform signaal rechtvaardigt. Voor toekomstige testen is trajectvoorbereiding ter plaatse, samen met een begeleider, een vereiste.
