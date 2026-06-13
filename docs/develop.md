@@ -325,8 +325,8 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 # develop3 (N=2)
 ## inleinding 
 Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert.
-- [Protocol](<../>)
-- [Rapport](<../>)
+- [Protocol](<../reports and protocols/protocol_develop_3.pdf>)
+- [Rapport](<../reports and protocols/Rapport_develop_3.pdf>)
 
 ### CMF onderzoek 
 Het voledige onderzoek is te lezen in het protokol en rapport van deze fase.

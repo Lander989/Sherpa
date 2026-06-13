@@ -110,8 +110,8 @@ Binnen dit project is Gemini ingezet als ondersteunende AI-tool, met een strikt 
   * [rapport](<./reports and protocols/Rapport_develop_2.pdf>)
 
 * User testing develop 3 (N=2)
-  * [protocol](<./>)
-  * [rapport](<./>)
+  * [protocol](<./reports and protocols/protocol_develop_3.pdf>)
+  * [rapport](<./reports and protocols/Rapport_develop_3.pdf>)
 
 ## Licentie
 
