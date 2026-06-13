@@ -1,25 +1,25 @@
 # Methodologie
-Dit project volgt de principes van Human-Centered Design binnen het Triple Diamond-model. In dit eerste semester doorliepen we de fasen Discover en Define.
+
+Dit project volgt de principes van Human-Centered Design binnen het Triple Diamond-model. We doorliepen een iteratief proces, waarbij we via specifieke onderzoeksmethoden continu hebben samengewerkt met de visueel beperkte doelgroep.
 
 <p align="center">
-  <img src="../img/0d43b80a-0594-4a19-9843-937068339654.jpg" width="100%">
+  <img src="../img/methodologie.png" width="100%" alt="SHERPA Methodologie Tijdlijn">
 </p>
 
-### Discover: Problem Finding
+**Discover: Problem Finding**
+Om de leefwereld en navigatienoden van de doelgroep te doorgronden, combineerden we kwantitatieve en kwalitatieve methoden. We voerden literatuurstudies en benchmarking uit (N=16). Dit vulden we aan met etnografisch veldonderzoek (observaties op de Brailletech-beurs en bij een oogatelier) en diepgaande user interviews (N=3). Dit leidde tot de centrale **How Might We-vraag**: 
+> *“Hoe kunnen we blinde personen ondersteunen bij het aanleren en onderhouden van trajecten?”*
 
-We zijn gestart met een literatuurstudie en benchmarking om de markt van hulpmiddelen te verkennen. Om de leefwereld van de doelgroep echt te begrijpen, voerden we etnografisch onderzoek uit op de Brailletech-beurs. Dit werd verdiept via user interviews (N=3), waarbij we specifiek focusten op navigatieproblemen en de analyse van concurrenten die ze momenteel gebruiken. Deze inzichten werden vertaald naar een persona en de centrale probleemstelling: “Hoe kunnen we blinde personen ondersteunen bij het aanleren en onderhouden van trajecten?”
+**Define: Designing the Right Thing**
+De ontwerpfase verliep via twee iteratieve *waves*:
+* **Wave 1:** We bouwden low-fidelity prototypes van een tactiele pin-matrix. Via *concept testing* (N=2) en *usability testing* (N=6) in outdoormilieus evalueerden we de cognitieve belasting.
+* **Wave 2 (Pivot):** Omdat de matrix te complex bleek, maakten we een cruciale pivot naar een fysiek draaibare pijl. Dit concept werd gevalideerd via *Wizard of Oz-testing* (N=2). Via een *weighted decision matrix* kozen we definitief voor dit concept en legden we de functionele eisen vast in een Product Requirement Document (PRD).
 
-### Define: Designing the Right Thing
+**Develop: Iterative Build Cycles**
+Het concept werd doorontwikkeld in drie sprints:
+* **Develop 1 (N=5):** De tactiele interactie werd geëvalueerd via gerichte *Wizard of Oz-testing*: *cirkeltesten* (richtingsnauwkeurigheid van zes pijlvarianten), *wandeltesten* met obstakels, en *vibratietesten* om haptische signalen af te stemmen.
+* **Develop 2 (N=2):** De fysieke ergonomie werd iteratief vormgegeven via antropometrische data en benchmarks (N=11) van eenhandige controllers. Met fysieke kleimodellen en *scenario-testing* valideerden we de grip en button-layout voor gebruik naast de witte stok. De resultaten werden via *variety prototyping* vertaald naar 5 werkende prototypes.
+* **Develop 3 (N=2):** De focus verschoof naar CMF en UX Excellence. Via benchmarking (N=9) van bestaande producten voor slechtzienden ontwierpen we de CMF-stragtegie van het product. Vervolgens werden de elektronica van project Opkomende Technologie geïntegreerd in de nieuwe behuizing, wat resulteerde in een autonoom en functioneel prototype.
 
-De oplossingsfase verliep in twee iteratieve waves:
-
-•	Wave 1: We startten met een storyboard en een low fidelity prototype (pin-matrixen van verschillende groottes). Via concept testing (N=2) valideerden we de leesbaarheid en memoriseerbaarheid van de stratenlayout. Vervolgens ontwikkelden we via een morfologische matrix een feature prototype. Tijdens usability testing (N=6) in de echte wereld bleek echter dat navigeren via een tactiele kaart voor een te hoge cognitieve belasting zorgde.
-
-•	Wave 2: We keerden terug naar de ideation fase voor een brainstormsessie om de navigatie te versimpelen. Dit leidde tot een pivot: het gebruik van een pijl voor richtingsaanduiding. Dit werd uitgewerkt in een tweede storyboard en prototype. Via de Wizard of Oz-techniek (N=2) werd dit nieuwe concept gevalideerd.
-
-We sloten het semester af met een weighted decision matrix, waarin we definitief kozen voor het draaibare pijl-concept. De functionele eisen hiervoor werden vastgelegd in een Product Requirement Document (PRD) als basis voor de technische uitwerking.
-
-###  develop 1: 
-Er werd besproken en gedocumenteerd wat de werkpunten waren van het huidig ontwerp, en waar we verder moesten aan werken.
-Via user-tests (N=5) gebben we verder gevalideerd wat de beste manier was om de gebruiker een richting aan te kunnen wijzen. We hebben ook getest op de mogelijkheid en leesbaarheid van feedback vanuit ons product naar de gebruiker toe.
-
+**Deliver: Finaal Systeem & Validatie**
+Tijdens outdoor *usability tests* (N=2) met het autonome, 3D-geprinte prototype valideerden we via directe observatie of de prioritaire eisen (vastgelegd via de *MoSCoW-methode* in het PRD) effectief werden behaald. Tot slot is het functionele eindresultaat, inclusief de werking in een realistische context, visueel vastgelegd in een wervend promotiefilmpje ter presentatie van het project.
