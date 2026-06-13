@@ -325,3 +325,6 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 
 #### Conclusie
 - Eindproduct moet robuust en kwalitatief aanvoelen.
+# develop3 (N=2)
+## inleinding 
+Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert.
