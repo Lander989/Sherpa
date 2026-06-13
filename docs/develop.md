@@ -214,7 +214,7 @@ De testen bestaan uit twee delen.
 
 Voor de testen werden een protocol en rapport opgesteld:
 
-- [Protocol](<../>)
+- [Protocol](<../reports and protocols/protocol_develop_2.pdf>)
 - [Rapport](<../>)
 
 ---
