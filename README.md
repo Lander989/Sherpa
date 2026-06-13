@@ -101,15 +101,15 @@ Binnen dit project is Gemini ingezet als ondersteunende AI-tool, met een strikt 
   * [Rapport](<./reports and protocols/Rapport Wave 2.pdf>)
 
 #### develop
-* User testing deel 1 (N=5)
+* User testing develop 1 (N=5)
   * [protocol](<./reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
   * [rapport](<./reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 
-* User testing deel 2 (N=2)
-  * [protocol](<./>)
+* User testing develop 2 (N=5)
+  * [protocol](<./reports and protocols/protocol_develop_2.pdf>)
   * [rapport](<./>)
 
-* User testing deel 3 (N=?)
+* User testing develop 3 (N=2)
   * [protocol](<./>)
   * [rapport](<./>)
 

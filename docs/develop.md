@@ -211,9 +211,6 @@ Om het ontwerpproces te ondersteunen, werden de prototypes gebaseerd op bestaand
 6. Validatie via kleimodellen
 7. Uitwerken van prototypes voor testing
 
-Alle bevindingen werden gebundeld in een onderzoeksrapport:  
-[Ergonomie_rapport](<../>)
-
 ---
 
 ## User Testing
@@ -328,12 +325,9 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 # develop3 (N=2)
 ## inleinding 
 Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert.
-## Onderzoeksvragen
+- [Protocol](<../>)
+- [Rapport](<../>)
 
-ook hier zijnde onderzoeks vragen gebaseerd op de design requirements:
-
-| Requirement | Onderzoeksvraag |
-|------------|----------------|
 ### CMF onderzoek 
 Het voledige onderzoek is te lezen in het protokol en rapport van deze fase.
 
@@ -364,3 +358,59 @@ Afwerking: een satijnen afwerking kreeg de voorkeur. Glossy oppervlakken werden 
 ##### Marktpositie
 
 De respondenten zagen potentieel in SHERPA en zouden overwegen het te kopen als het een afgewerkt product was. Een mogelijke terugbetaling als medisch hulpmiddel zou de aantrekkelijkheid verhogen, terwijl een verplicht abonnement voor updates eerder negatief werd beoordeeld. Daarnaast kwam de vraag naar voren wie aansprakelijk is bij ongevallen tijdens het gebruik, dit vraagt verder juridisch onderzoek .
+### finale test
+##### Doel van de test
+
+bij de finale test wordt onderzocht hoe goed het product gebruikers ondersteunt tijdens echte wandeltrajecten. De centrale onderzoeksvraag luidt:
+
+Hoe presteert het product in de praktijk?
+
+De nadruk ligt op het testen van het volledige systeem buiten een gecontroleerde laboratoriumomgeving, waar onverwachte situaties en variabelen kunnen optreden.
+
+##### Testopzet
+
+Twee gebruikers liepen een persoonlijk traject dat voor hen relevant was:
+
+Dirk volgde een route van een bushalte naar een zwembad, waarbij vooral zebrapaden en open ruimtes een uitdaging vormden.
+Chris testte een alternatief traject in Gullegem, gebaseerd op een eerder gedefinieerde route van Gent-Sint-Pieters naar het MSK.
+
+##### Belangrijkste resultaten
+* GPS bleek onvoldoende betrouwbaar
+
+Tijdens de eerste test functioneerde de GPS aanvankelijk correct, maar begon later af te wijken (driften), waardoor de routebegeleiding onnauwkeurig werd. Bij de tweede test werkte de GPS zelfs vanaf het begin niet goed. Daarom werd in beide gevallen overgeschakeld op manuele besturing, waarmee de trajecten succesvol konden worden afgelegd.
+
+* Aangeleerde mobiliteitstechnieken blijven dominant
+
+De deelnemers vertrouwden vaak op hun bestaande oriëntatietechnieken, zoals het volgen van een stoeprand of muur, zelfs wanneer de wijzer een andere richting aangaf. Dit toont aan dat SHERPA bestaande mobiliteitstechnieken moet ondersteunen in plaats van vervangen.
+
+* Gesproken instructies geven het meeste vertrouwen
+
+De verbale aanwijzingen werden als waardevoller ervaren dan de richtingaanwijzer alleen. Op plaatsen zonder duidelijke volglijnen schakelden deelnemers wel over op de wijzer, maar daarbij was vaak eerst een korte periode van twijfel zichtbaar.
+
+* Trilsignalen hoeven mogelijk niet verschillend te zijn
+
+Tijdens de testen reageerden gebruikers niet verschillend op informatieve of waarschuwende trillingen. Ze gebruikten het trilsignaal vooral als teken dat er een gesproken instructie zou volgen. Het rapport suggereert daarom dat één uniform attentiesignaal mogelijk volstaat.
+
+* Goede voorbereiding van routes is essentieel
+
+De onderzoekers concluderen dat trajecten niet alleen digitaal (bijvoorbeeld via Google Earth) mogen worden voorbereid. Om betrouwbare navigatie te garanderen, moeten routes ook fysiek worden gecontroleerd en ingelopen.
+
+##### Feedback van de deelnemers
+
+Tijdens de nabespreking gaven deelnemers aan:
+
+- dat ze weinig aandacht besteedden aan het type trilsignaal en vooral opmerkten of er een trilling was
+- interesse te hebben om het toestel daadwerkelijk te gebruiken;
+- dat de richtingaanwijzer soms onduidelijk bewoog, mede doordat de handmatige bediening niet altijd volledig consistent was.
+##### Evaluatie van de succescriteria
+
+De meeste vooropgestelde doelstellingen werden grotendeels gehaald:
+
+De herkenningspunten werden bereikt wanneer de manuele besturing werd gebruikt.
+De gebruiker reageerde correct op de feedback van het systeem.
+Er was geen verwarring bij de start van de trajecten.
+Het gebruik van de witte stok werd niet belemmerd.
+Het tweede traject kon na een korte introductie succesvol worden afgelegd, terwijl het eerste traject door GPS-problemen extra interventies vereiste.
+##### Algemene conclusie
+
+De praktijktest toont aan dat het concept van SHERPA veel potentieel heeft, maar dat de huidige GPS-implementatie nog niet betrouwbaar genoeg is voor autonoom gebruik. Gebruikers halen vooral vertrouwen uit gesproken instructies, terwijl de richtingaanwijzer een ondersteunende rol speelt, met name in open ruimtes zonder natuurlijke geleidelijnen. Daarnaast blijkt dat het systeem het beste werkt wanneer het aansluit bij de bestaande mobiliteitstechnieken van slechtziende gebruikers en wanneer routes zorgvuldig vooraf zijn voorbereid.
