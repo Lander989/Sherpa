@@ -1,23 +1,23 @@
 # SHERPA
-*Tactiele GPS: een navigatiesysteem voor blinden dat hen tijdens hun traject begeleidt aan de hand van tactiele snapshots van de omgeving.* 
+*Tactiele GPS: een navigatiesysteem voor blinden en slechtziende dat hen tijdens hun traject begeleidt aan de hand van tactiele wijzer dit hen de weg toont.* 
 
-🛠️ Built by ``Corbin Breakevelt`` & ``Lander Dumont`` & ``Roland Derynck``    
+🛠️ Built by ``Corbin Braekevelt`` & ``Lander Dumont`` & ``Roland Derynck``    
 🔥 Supervised by ``prof. dr. Bas Baccarne``, ``Yannick Christiaens`` & ``Wouter Devriese``    
 🌱 Grown at ``Ghent University`` 🏛️ ``Industrial Design Engineering`` ([project overview](https://github.com/basbaccarne/human-centered-design))       
 
-*Dag/Maand/Jaar van de laatste update*   
+*23/06/2026 van de laatste update*   
 
 ## Samenvatting
 Personen met een visuele beperking ervaren vaak onzekerheid tijdens het navigeren. Huidige hulpmiddelen zoals spraak-GPS vragen veel concentratie (hoge cognitieve belasting), terwijl de gebruiker vooral behoefte heeft aan geruststelling en context op aangeleerde trajecten.
 
-Dit probleem hebben wij onderzocht via het Double Diamond-model. Na veldonderzoek (Brailletech) en interviews bleek uit onze testen met een tactiele kaart (wave 1) dat complexe informatie tijdens het wandelen niet werkt. Dit inzicht leidde tot een cruciale pivot.
+Ons product SHERPA moet een oplossing bieden voor deze problemen. Ons onderzoek werd via het Double Diamond-model uitgevoerd. Na veldonderzoek, interviews en testen bleek dat onze eerste poging, de tactiele kaart (wave 1) te complex was om te interpreteren tijdens het wandelen. Dit inzicht leidde tot een cruciale pivot.
 
-Onze oplossing is een intuïtief navigatietoestel met een fysiek draaibare pijl, gebaseerd op het ‘Record & Replay’-principe. De gebruiker (of een begeleider) neemt een route eenmalig op, waarna het toestel deze opslaat.
+Onze oplossing is een intuïtief navigatietoestel met een fysiek draaibare pijl, gebaseerd op het ‘Record & Replay’-principe. De gebruiker (met of zonder begeleider) wandelt het nodige traject eenmalig af. Het toestel slaat vanzelf om de zoveel tijd een punt op en mapt zo een route uit. Bij het tegenkomen van een herkenningspunt of een obstakel kan de gebruiker deze invoeren in het apparaat met een spraakbericht. Aan het einde van de wandeling wordt het traject opgeslagen en toegevoegd aan een lijst met de gebruiker zijn andere trajecten. 
+Als de gebruiker een traject wenst af te leggen, selecteert hij deze in zijn lijst en start hij zijn traject.
 
-Tijdens het wandelen wijst de pijl continu de juiste richting aan. Hierdoor hoeft de gebruiker geen complexe instructies te verwerken. Het toestel biedt een voelbaar en constant oriëntatiepunt, wat zorgt voor mentale rust en meer zelfvertrouwen, zonder het gehoor te blokkeren.
-
+Tijdens het wandelen wijst de pijl continu de juiste richting aan door de ingebouwde EMU en kompas. Hierdoor hoeft de gebruiker geen complexe instructies te verwerken. Het toestel biedt een voelbaar en constant oriëntatiepunt, wat zorgt voor mentale rust en meer zelfvertrouwen, zonder onnodige afleidingen.
 <p align="center">
-  <img src="img\ChatGPT_pijl_protoype.jpg" width="100%">
+  <img src="img\readme prototype foto.jpg" width="100%">
 </p>
 
 ## Introductie
