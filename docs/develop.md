@@ -20,6 +20,8 @@ Onderstaand schema toont de verschillende fases en hun onderlinge relaties.
 
 <p align="center">
   <img src="../img/systeemarchitectuur~~~user flow.png" width="100%">
+  <br>
+  <em>Systeemarchitectuur en user flow van het systeem met record- en playfase.</em>
 </p>
 
 ## Onderzoeksvragen
@@ -32,12 +34,12 @@ De onderzoeksvragen dienen om de design requirements te vertalen naar concrete p
 | **D3.4** De gebruiker legt minder bekende trajecten af met zelfvertrouwen dankzij het systeem. | Wat is er nodig zodat het wijzerconcept voldoende zekerheid biedt aan de gebruiker? |
 | **D5.1** De UI is volledig bedienbaar zonder visuele informatie. | Welke elementen uit de systeemarchitectuur kunnen via trilsignalen worden gecommuniceerd? |
 
-## Interactieve prototypes
-
-De focus lag in deze fase op de verdere uitwerking van de wijzer. Vanuit het prototype uit de vorige fase werden zes varianten ontwikkeld. Na een interne evaluatie werden deze herwerkt en samengevoegd tot een testopstelling die werd aangestuurd met een RC-controller.
+Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten, variërend van volledig blind tot personen met restvisus.
 
 <p align="center">
-  <img src="../img/overzicht prototypes.png" width="100%">
+  <img src="../img/Dev_1_Tak_Architectuur.png" width="75%">
+  <br>
+  <em>Bevinding van testen in de architectuur.</em>
 </p>
 
 ## User Testing
@@ -47,28 +49,24 @@ Voor de testen werden een protocol en een rapport opgesteld.
 - [Protocol](<../reports and protocols/protocol_Deelopdracht 3 develop 1.pdf>)
 - [Rapport](<../reports and protocols/Verslag_Deelopdracht 3 develop 1.pdf>)
 
-### Doel van de testen
+## Interactieve prototypes
+
+Om Vanuit het prototype uit de vorige fase werden zes varianten ontwikkeld. Na een interne evaluatie werden deze herwerkt en samengevoegd tot een testopstelling die werd aangestuurd met een RC-controller.
 
 <p align="center">
-  <img src="../img/Dev_1_Tak_Architectuur.png" width="75%">
+  <img src="../img/overzicht prototypes.png" width="100%">
+  <br>
+  <em>Overzicht van de ontwikkelde develop 1 prototypes.</em>
 </p>
-
-Drie deelonderzoeken werden uitgevoerd met vijf visueel beperkte respondenten, variërend van volledig blind tot personen met restvisus.
-
-De onderzoeken hadden als doel om:
-
-1. De duidelijkste vorm van tactiele richtingsaansturing te bepalen.
-2. Het meest geschikte prototype te evalueren in een realistische wandelcontext.
-3. De verstaanbaarheid van trilsignalen als feedbackmechanisme te onderzoeken.
-
----
 
 ## Test 1 – Cirkeltest
 
-<div style="display: flex; gap: 10px; align-items: center;">
+<p align="center">
   <img src="../img/Mirjan_small.gif" style="height: 500px; width: auto;">
   <img src="../img/Cirkel_Test.jpg" style="height: 400px; width: auto;">
-</div>
+  <br>
+  <em>Cirkeltest in actie</em>
+</p>
 
 ### Opzet
 
@@ -114,6 +112,12 @@ De cirkeltest leverde waardevolle inzichten op voor de leercurve en het gebruike
 
 Met de twee best presterende prototypes (driehoek en draaiwijzer) werd een wandelparcours met rechte stukken en bochten afgelegd.
 
+<p align="center">
+  <img src="../img/Dev_1_Traject_Potjes.jpg" width="75%">
+  <br>
+  <em>Wandelparcours met obstakels gebruikt in de trajectaanduidingstest.</em>
+</p>
+
 ### Resultaten
 
 - **Driehoek (3/5 voorkeur):** functioneerde goed, maar er was behoefte aan een duidelijk referentiepunt. Dit werd tijdens de test tijdelijk opgelost met tape.
@@ -134,7 +138,13 @@ Deze uitspraak suggereert dat de deelnemer vertrouwen had in het toestel en de p
 
 ### Opzet
 
-Tijdens de wandeling werden trilsignalen met vaste betekenissen aangeboden: start, herkenningspunt, waarschuwing en stop.
+Tijdens de wandeling werden trilsignalen gegeven met vaste betekenissen (start, herkenningspunt, waarschuwing, stop). Reactietijd en interpretatiefouten werden genoteerd.
+
+<p align="center">
+  <img src="../img/Dev_1_TrilConventie.png" width="75%">
+  <br>
+  <em>Overzicht van de gebruikte trilconventies tijdens de vibratiefeedbacktest.</em>
+</p>
 
 ### Resultaten
 
@@ -178,6 +188,13 @@ De onderzoeksvragen zijn opnieuw gebaseerd op de design requirements:
 | **D5.6** De tactiele richtingaanwijzer bevindt zich op een locatie die een neutrale en ontspannen polshouding toelaat tijdens het wandelen. | Hoe kan de vorm van het product de houding van de gebruiker sturen? |
 | **D5.1** De UI is volledig bedienbaar zonder visuele informatie. | Welke knoppen zijn geschikt en bruikbaar voor de doelgroep? <br> Wat is de beste plaatsing van deze knoppen op het product? |
 
+<p align="center">
+  <img src="../img/Dev_2_Tak_Architectuur.png" width="75%">
+  <br>
+  <em>Bevinding van testen in de architectuur.</em>
+</p>
+
+
 ---
 
 ## Vooronderzoek ergonomie en verloop
@@ -205,8 +222,8 @@ De testen bestaan uit twee delen.
 
 ### Testopzet
 
-- **Deel 1:** spontane interactie + rangschikking op comfort
-- **Deel 2:** gesimuleerd gebruik in een scenario met observatie
+- **Test 1:** spontane interactie + rangschikking op comfort
+- **Test 2:** gesimuleerd gebruik in een scenario met observatie
 
 <p align="center">
   <img src="../img/Dev_2_T1.jpg" width="75%">
