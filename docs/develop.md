@@ -322,14 +322,25 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 
 #### Conclusie
 - Eindproduct moet robuust en kwalitatief aanvoelen.
-# develop3 (N=2)
-## inleinding 
-Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert.
-- [Protocol](<../reports and protocols/protocol_develop_3.pdf>)
-- [Rapport](<../reports and protocols/Rapport_develop_3.pdf>)
 
-### CMF onderzoek 
-Het voledige onderzoek is te lezen in het protokol en rapport van deze fase.
+## Nieuwe Design Requirements
+
+| ID   | Design Requirement |
+|------|--------------------|
+| D3.4 | Het ontwerp communiceert visueel en tactiel een gevoel van stevigheid en duurzaamheid. |
+| D5.7 | Het toestel past in een broekzak. |
+| D5.8 | De gebruiker heeft vertrouwen dat het toestel niet uit de hand kan vallen tijdens gebruik. |
+
+# Develop 3 (N = 2)
+
+## Inleinding 
+Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
+
+- [Protocol Develop 3](<../reports and protocols/protocol_develop_3.pdf>)
+- [Rapport Develop 3](<../reports and protocols/Rapport_develop_3.pdf>)
+
+### Deel 1 CMF onderzoek 
+Het voledige onderzoek is te lezen in het protocol en rapport van deze fase.
 
 ##### Doel van het onderzoek
 
@@ -358,59 +369,92 @@ Afwerking: een satijnen afwerking kreeg de voorkeur. Glossy oppervlakken werden 
 ##### Marktpositie
 
 De respondenten zagen potentieel in SHERPA en zouden overwegen het te kopen als het een afgewerkt product was. Een mogelijke terugbetaling als medisch hulpmiddel zou de aantrekkelijkheid verhogen, terwijl een verplicht abonnement voor updates eerder negatief werd beoordeeld. Daarnaast kwam de vraag naar voren wie aansprakelijk is bij ongevallen tijdens het gebruik, dit vraagt verder juridisch onderzoek .
-### finale test
-##### Doel van de test
 
-bij de finale test wordt onderzocht hoe goed het product gebruikers ondersteunt tijdens echte wandeltrajecten. De centrale onderzoeksvraag luidt:
+---
 
-Hoe presteert het product in de praktijk?
 
-De nadruk ligt op het testen van het volledige systeem buiten een gecontroleerde laboratoriumomgeving, waar onverwachte situaties en variabelen kunnen optreden.
 
-##### Testopzet
+###  Deel 2 - Overkoepelende test
 
-Twee gebruikers liepen een persoonlijk traject dat voor hen relevant was:
+### Testomgeving en setup
 
-Dirk volgde een route van een bushalte naar een zwembad, waarbij vooral zebrapaden en open ruimtes een uitdaging vormden.
-Chris testte een alternatief traject in Gullegem, gebaseerd op een eerder gedefinieerde route van Gent-Sint-Pieters naar het MSK.
+Twee trajecten werden geselecteerd op basis van situaties die tijdens de definitiefase door de deelnemers werden aangehaald. Beide bevatten uitdagingen die vaak voorkomen bij zelfstandig navigeren, zoals het oversteken van open ruimtes, het herkennen van oriëntatiepunten en het vinden van zebrapaden.
 
-##### Belangrijkste resultaten
-* GPS bleek onvoldoende betrouwbaar
+**Traject Dirk — Kortrijk**
+Dirk gaf aan dat hij graag zelfstandig naar het zwembad zou gaan. Het traject tussen bushalte Kortrijk Weide en de ingang van het zwembad vormt een uitdaging door open ruimtes en zebrapaden. Herkenningspunten zijn onder andere paaltjes, een tunnelwand, goten en betonnen randen.
 
-Tijdens de eerste test functioneerde de GPS aanvankelijk correct, maar begon later af te wijken (driften), waardoor de routebegeleiding onnauwkeurig werd. Bij de tweede test werkte de GPS zelfs vanaf het begin niet goed. Daarom werd in beide gevallen overgeschakeld op manuele besturing, waarmee de trajecten succesvol konden worden afgelegd.
+**Traject Chris — Gullegem**
+Chris beschreef een traject tussen Gent-Sint-Pieters en het MSK. Om praktische redenen werd een vergelijkbaar traject uitgewerkt in Gullegem, met herkenningspunten zoals stoepranden, riooldeksels, verlaagde boordstenen, grasranden en straatmeubilair.
 
-* Aangeleerde mobiliteitstechnieken blijven dominant
+---
 
-De deelnemers vertrouwden vaak op hun bestaande oriëntatietechnieken, zoals het volgen van een stoeprand of muur, zelfs wanneer de wijzer een andere richting aangaf. Dit toont aan dat SHERPA bestaande mobiliteitstechnieken moet ondersteunen in plaats van vervangen.
+### Prototype
 
-* Gesproken instructies geven het meeste vertrouwen
+Het werkende prototype bestond uit de volgende componenten:
 
-De verbale aanwijzingen werden als waardevoller ervaren dan de richtingaanwijzer alleen. Op plaatsen zonder duidelijke volglijnen schakelden deelnemers wel over op de wijzer, maar daarbij was vaak eerst een korte periode van twijfel zichtbaar.
+- Een tactiele wegwijzer
+- Een controledoos gedragen rond de nek
+- Een webdashboard voor trajectmonitoring
+- GPS-besturing met mogelijkheid tot manuele overname
 
-* Trilsignalen hoeven mogelijk niet verschillend te zijn
+Het systeem gaf trilsignalen bij het bereiken van herkenningspunten. Gesproken instructies werden tijdens de test door een begeleider gegeven.
 
-Tijdens de testen reageerden gebruikers niet verschillend op informatieve of waarschuwende trillingen. Ze gebruikten het trilsignaal vooral als teken dat er een gesproken instructie zou volgen. Het rapport suggereert daarom dat één uniform attentiesignaal mogelijk volstaat.
+---
 
-* Goede voorbereiding van routes is essentieel
+### Testverloop
 
-De onderzoekers concluderen dat trajecten niet alleen digitaal (bijvoorbeeld via Google Earth) mogen worden voorbereid. Om betrouwbare navigatie te garanderen, moeten routes ook fysiek worden gecontroleerd en ingelopen.
+Voor beide trajecten werd hetzelfde scenario gevolgd:
 
-##### Feedback van de deelnemers
+1. De deelnemer wordt naar het startpunt gebracht.
+2. Het prototype wordt aangebracht en kort toegelicht.
+3. De deelnemer start het traject.
+4. De wegwijzer geeft richtingsinformatie.
+5. Op vooraf bepaalde herkenningspunten worden trilsignalen en gesproken instructies gegeven.
+6. Observaties worden geregistreerd gedurende het volledige traject.
 
-Tijdens de nabespreking gaven deelnemers aan:
+---
 
-- dat ze weinig aandacht besteedden aan het type trilsignaal en vooral opmerkten of er een trilling was
-- interesse te hebben om het toestel daadwerkelijk te gebruiken;
-- dat de richtingaanwijzer soms onduidelijk bewoog, mede doordat de handmatige bediening niet altijd volledig consistent was.
-##### Evaluatie van de succescriteria
+### Resultaten
 
-De meeste vooropgestelde doelstellingen werden grotendeels gehaald:
+#### Wegwijzing
 
-De herkenningspunten werden bereikt wanneer de manuele besturing werd gebruikt.
-De gebruiker reageerde correct op de feedback van het systeem.
-Er was geen verwarring bij de start van de trajecten.
-Het gebruik van de witte stok werd niet belemmerd.
-Het tweede traject kon na een korte introductie succesvol worden afgelegd, terwijl het eerste traject door GPS-problemen extra interventies vereiste.
-##### Algemene conclusie
+Op het eerste traject werkte het GPS-prototype aanvankelijk goed en werden de eerste herkenningspunten aantoonbaar bereikt. Na verloop van tijd begon de GPS te driften, waardoor we overschakelden naar manuele besturing. Hiermee werden de overige herkenningspunten zonder problemen bereikt. Eén interventie was nog nodig ter hoogte van herkenningspunt 3, waar een auto de deelnemer afleiding veroorzaakte.
 
-De praktijktest toont aan dat het concept van SHERPA veel potentieel heeft, maar dat de huidige GPS-implementatie nog niet betrouwbaar genoeg is voor autonoom gebruik. Gebruikers halen vooral vertrouwen uit gesproken instructies, terwijl de richtingaanwijzer een ondersteunende rol speelt, met name in open ruimtes zonder natuurlijke geleidelijnen. Daarnaast blijkt dat het systeem het beste werkt wanneer het aansluit bij de bestaande mobiliteitstechnieken van slechtziende gebruikers en wanneer routes zorgvuldig vooraf zijn voorbereid.
+Bij de tweede test werkte de GPS van bij het begin niet correct en schakelden we onmiddellijk over naar manuele sturing. Het traject in Gullegem verliep vlotter door het grotere aantal volglijnen. De deelnemer concentreerde zich vooral op het toestel op stukken zonder volglijn.
+
+#### Aangeleerde gewoontes
+
+Deelnemers verkozen op momenten hun eigen intuïtie boven de aanwijzingen van de wijzer. Zo volgden ze de stoeprand in plaats van de instructie om rechtdoor te gaan, en lieten ze een herkenningspunt los toen de wijzer haaks op de stoeprand wees. Dit bevestigt dat het toestel de aangeleerde mobiliteitstechnieken — zoals volglijnen en herkenningspunten — moet ondersteunen en niet doorkruisen.
+
+#### Spraakinstructies
+
+Spraakinstructies gaven duidelijk het meeste vertrouwen, meer dan de wijzer alleen. Op stukken met een volgbare route werd de wijzer nauwelijks gebruikt. Tussen H5, H6 en H7, waar geen volglijn beschikbaar was, schakelde de deelnemer volledig over op het wijzersysteem. Hier was een korte aarzeling zichtbaar, waarna de deelnemer de aanwijzingen van het systeem volgde.
+
+#### Trilsignalen
+
+De trilsignalen waren moeilijk te observeren in hun effect. Ongeacht het signaal stopte de gebruiker steeds en wachtte op de gesproken instructie. Tijdens de debrief gaven deelnemers aan dat ze de aard van het signaal niet actief interpreteren — enkel de aanwezigheid ervan volstaat als attentietrigger. Dit suggereert dat één uniform attentiesignaal voldoende is.
+
+#### Trajectvoorbereiding
+
+De trajecten werden uitgestippeld op basis van Google Earth en lokale kennis. De GPS-problemen roepen de vraag op of het verschil tussen Google Earth en de werkelijke situatie ter plaatse hieraan bijdraagt. Het effectief afwandelen van een traject samen met een begeleider blijkt noodzakelijk om accurate en actuele trajecten op te bouwen.
+
+#### Debrief
+
+Een deelnemer gaf spontaan aan geïnteresseerd te zijn in het toestel voor dagelijks gebruik. Een andere deelnemer merkte op dat de wijzer soms onduidelijk bewoog, wat te wijten is aan inconsistente manuele besturing door de onderzoeker.
+
+---
+### Succes metrics
+
+| ID | Requirement | Meetcriterium | Traject 1 (Dirk) | Traject 2 (Chris) | Resultaat |
+|----|-------------|---------------|-------------------|-------------------|-----------|
+| D1.1 | Het systeem begeleidt de gebruiker doorheen een traject zodat elk herkenningspunt aantoonbaar bereikt wordt. | ≥ 100% van de herkenningspunten correct bereikt (observatie per punt: ja/nee). | H2 en H3 niet bereikt | H1 t.e.m. H6 bereikt | ⚠️ Gedeeltelijk |
+| D1.2 | Het systeem geeft eenduidige feedback bij correcte richting, foute richting, herkenningspunten en gevaarlijke locaties. | Deelnemer reageert correct op elk feedbacksignaal; ≥ 90% correcte reacties per sessie. | H1 t.e.m. H8 | H1 t.e.m. H6 | ✅ Voldaan |
+| D1.3 | De gebruiker toont geen verwarring bij de start van het traject. | Geen observeerbare verwarring (pauze > 10 s, foutieve richting, verbale twijfel) in de eerste 60 s. | Geen verwarring bij start, wel later door aangeleerde gewoontes | Geen verwarring bij start, wel later door aangeleerde gewoontes | ⚠️ Gedeeltelijk |
+| D4.1 | Het gebruik van de witte stok wordt niet belemmerd door het product. | 0 obstakelcontacten bij ≥ 3 deelnemers tijdens trajecttest. | ✅ Voldaan | ✅ Voldaan | ✅ Voldaan |
+| D5.5 | Het systeem is bruikbaar na een enkele uitlegsessie van ≤ 20 minuten. | Deelnemer voltooit het parcours met ≤ 2 begeleidersinterventies na max. 20 min uitleg. | ❌ Niet voldaan | ✅ Voldaan | ⚠️ Gedeeltelijk |
+| D3.4 | De gebruiker legt minder bekende trajecten af met zelfvertrouwen dankzij het systeem. | BERT: Onzeker ←1·2·3·4·5·6·7→ Zelfzeker — drempel: ≥ +2 t.o.v. score zonder toestel. | Zonder: 2 · Met: 5 · Verschil: +3 | Zonder: 4 · Met: 6 · Verschil: +2 | ✅ Voldaan |
+
+
+### Samenvatting
+
+De GPS-technologie bleek onvoldoende betrouwbaar voor beide trajecten: manuele besturing werkte telkens wel. Spraakinstructies zijn de sterkste vertrouwensgever, de wijzer wordt vooral ingezet waar geen volglijn beschikbaar is. Trilsignalen functioneren puur als attentietrigger en niet als informatiedrager, wat het gebruik van één uniform signaal rechtvaardigt. Voor toekomstige testen is trajectvoorbereiding ter plaatse, samen met een begeleider, een vereiste.
