@@ -47,7 +47,7 @@ Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoa
 
 
 ## Noot inzake het gebruik van AI
-In semester 1 maakte Roland gebruik van AI. Hij zette Whisper in om audiobestanden te transcriberen en ChatGPT voor de analyse. Gemini en chatgpt werden gebruikt om de documentatie in github in te korten en vlotter te maken. Corbin gebruikte geen AI, zowel voor de documentatie als het project.
+Er werd gebruikgemaakt van Whisper om audiobestanden te transcriberen en ChatGPT voor de analyse. Gemini en ChatGPT werden gebruikt om de documentatie in GitHub in te korten en vlotter te maken. AI werd ook ingezet bij het maken van en opkuisen van foto's.
 
 ## Bijlagen
 #### Discovery
