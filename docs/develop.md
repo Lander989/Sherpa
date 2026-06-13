@@ -230,7 +230,7 @@ De test bestaat uit twee delen die de interactie van de gebruiker met het toeste
 Voor de testen werden een protocol en rapport opgesteld:
 
 - [Protocol](<../reports and protocols/protocol_develop_2.pdf>)
-- [Rapport](<../>)
+- [Rapport](<../reports and protocols/Rapport_develop_2.pdf>)
 
 ---
 
@@ -336,8 +336,8 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 ## Inleinding 
 Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
 
-- [Protocol Develop 3](<../>)
-- [Rapport Develop 3](<../>)
+- [Protocol Develop 3](<../reports and protocols/protocol_develop_3.pdf>)
+- [Rapport Develop 3](<../reports and protocols/Rapport_develop_3.pdf>)
 
 ### Deel 1 CMF onderzoek 
 Het voledige onderzoek is te lezen in het protocol en rapport van deze fase.
