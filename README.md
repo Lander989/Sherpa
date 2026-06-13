@@ -1,5 +1,5 @@
 # SHERPA
-*Tactiele GPS: een navigatiesysteem voor blinden en slechtziende dat hen tijdens hun traject begeleidt aan de hand van tactiele wijzer dit hen de weg toont.* 
+*Tactiele GPS: een navigatiesysteem voor blinden en slechtziende dat hen tijdens hun traject begeleidt aan de hand van een tactiele wijzer dat hen de weg toont.* 
 
 🛠️ Built by ``Corbin Braekevelt`` & ``Lander Dumont`` & ``Roland Derynck``    
 🔥 Supervised by ``prof. dr. Bas Baccarne``, ``Yannick Christiaens`` & ``Wouter Devriese``    
