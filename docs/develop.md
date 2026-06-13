@@ -334,7 +334,7 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 # Develop 3 (N = 2)
 
 ## Inleinding 
-Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
+Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA en plaatsing binnen de maatschappij. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
 
 - [Protocol Develop 3](<../reports and protocols/protocol_develop_3.pdf>)
 - [Rapport Develop 3](<../reports and protocols/Rapport_develop_3.pdf>)
@@ -366,9 +366,31 @@ Kleurgebruik: kleur moet een functionele rol spelen, bijvoorbeeld om knoppen bet
 Materiaal: omdat het product buiten gebruikt wordt en schokken moet kunnen weerstaan, zijn sterke en impactbestendige materialen gewenst. Een combinatie van een harde kern met een rubberachtige buitenlaag werd door respondenten als comfortabel en praktisch ervaren.
 Afwerking: een satijnen afwerking kreeg de voorkeur. Glossy oppervlakken werden als glad ervaren en matte oppervlakken zouden sneller vuil worden. Gladde knoppen werden positief beoordeeld.
 
-##### Marktpositie
+
+
+
+##### Marktpositie en maatschappij
 
 De respondenten zagen potentieel in SHERPA en zouden overwegen het te kopen als het een afgewerkt product was. Een mogelijke terugbetaling als medisch hulpmiddel zou de aantrekkelijkheid verhogen, terwijl een verplicht abonnement voor updates eerder negatief werd beoordeeld. Daarnaast kwam de vraag naar voren wie aansprakelijk is bij ongevallen tijdens het gebruik, dit vraagt verder juridisch onderzoek .
+
+<p align="center">
+  <img src="../img/Dev_3_StakeholderMap.png" width="75%">
+</p>
+
+**Producenten**
+Profiteren van het terugbetalingssysteem voor erkende hulpmiddelen, wat hun marge vergroot en de drempel voor de gebruiker verlaagt.
+
+**Oriëntatie- en mobiliteitstrainers**
+Integreren het product in hun trainingsprogramma's en spelen een sleutelrol bij het opnemen van trajecten en de begeleiding op maat.
+
+**Zorginstellingen**
+Staan in voor verkoop, advies en nazorg. Als vertrouwd aanspreekpunt voor de doelgroep zijn zij een belangrijke schakel in de distributie.
+
+**Begeleiders en mantelzorgers**
+Ondersteunen de gebruiker bij het opnemen van trajecten en de dagelijkse werking van het systeem.
+
+**Overheid**
+Verantwoordelijk voor toegankelijke infrastructuur, maar in de praktijk zijn er nog veel tekortkomingen zoals ontbrekende geleidelijnen, slecht onderhouden voetpaden en inconsistent straatmeubilair. Betere infrastructuur vergroot de effectiviteit van SHERPA aanzienlijk.
 
 ---
 
@@ -382,6 +404,11 @@ Twee trajecten werden geselecteerd op basis van situaties die tijdens de definit
 
 **Traject Dirk — Kortrijk**
 Dirk gaf aan dat hij graag zelfstandig naar het zwembad zou gaan. Het traject tussen bushalte Kortrijk Weide en de ingang van het zwembad vormt een uitdaging door open ruimtes en zebrapaden. Herkenningspunten zijn onder andere paaltjes, een tunnelwand, goten en betonnen randen.
+
+
+<p align="center">
+  <img src="../img/Traject_Dirk.png" width="75%">
+</p>
 
 **Traject Chris — Gullegem**
 Chris beschreef een traject tussen Gent-Sint-Pieters en het MSK. Om praktische redenen werd een vergelijkbaar traject uitgewerkt in Gullegem, met herkenningspunten zoals stoepranden, riooldeksels, verlaagde boordstenen, grasranden en straatmeubilair.
@@ -398,6 +425,10 @@ Het werkende prototype bestond uit de volgende componenten:
 - GPS-besturing met mogelijkheid tot manuele overname
 
 Het systeem gaf trilsignalen bij het bereiken van herkenningspunten. Gesproken instructies werden tijdens de test door een begeleider gegeven.
+
+<p align="center">
+  <img src="../img/Dev_3_Proto.jpg" width="75%">
+</p>
 
 ---
 
@@ -440,10 +471,17 @@ De trajecten werden uitgestippeld op basis van Google Earth en lokale kennis. De
 
 #### Debrief
 
+<p align="center">
+  <img src="../img/Dev3_Finale_Test.jpg" width="75%">
+</p>
+
 Een deelnemer gaf spontaan aan geïnteresseerd te zijn in het toestel voor dagelijks gebruik. Een andere deelnemer merkte op dat de wijzer soms onduidelijk bewoog, wat te wijten is aan inconsistente manuele besturing door de onderzoeker.
 
 ---
+
 ### Succes metrics
+
+In welke mate zijn we erin geslaagd om de vooropgestelde succes metrics te halen? Hieronder een overzicht:
 
 | ID | Requirement | Meetcriterium | Traject 1 (Dirk) | Traject 2 (Chris) | Resultaat |
 |----|-------------|---------------|-------------------|-------------------|-----------|
