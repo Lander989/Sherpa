@@ -98,6 +98,8 @@ Er werd gebruikgemaakt van Whisper om audiobestanden te transcriberen en ChatGPT
 * User testing deel 3 (N=?)
   * [protocol](<./>)
   * [rapport](<./>)
+#### video 
+[video link](<./video's/proj. GGO SHERPA video.mp4>)
 ## Licentie
 
 This repository contains both software and design materials created as part of an industrial design energineering project at Ghent University.
