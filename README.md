@@ -5,7 +5,7 @@
 🔥 Supervised by ``prof. dr. Bas Baccarne``, ``Yannick Christiaens`` & ``Wouter Devriese``    
 🌱 Grown at ``Ghent University`` 🏛️ ``Industrial Design Engineering`` ([project overview](https://github.com/basbaccarne/human-centered-design))       
 
-*13/06/2026 van de laatste update*   
+*14/06/2026 van de laatste update*   
 
 ## Samenvatting
 Personen met een visuele beperking ervaren vaak onzekerheid tijdens het navigeren. Huidige hulpmiddelen zoals spraak-GPS vragen veel concentratie (hoge cognitieve belasting), terwijl de gebruiker vooral behoefte heeft aan geruststelling en context op aangeleerde trajecten.

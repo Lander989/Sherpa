@@ -221,10 +221,12 @@ De test bestaat uit twee delen die de interactie van de gebruiker met het toeste
 
 - **Test 1:** In het eerste deel wordt de houding en greep van de gebruiker onderzocht. De testpersonen staan recht en krijgen verschillende prototypes één voor één aangereikt. Ze verkennen de grip intuïtief en rangschikken de prototypes vervolgens van minst naar meest comfortabel, waarbij ze hun keuze toelichten.
 
-- **Test 2:** n het tweede deel wordt een realistisch gebruiksscenario nagebootst. Deelnemers krijgen eerst een korte briefing over het toestel en doorlopen daarna de volledige flow alsof ze op pad gaan: het toestel opbergen, zich voorbereiden met hulpmiddelen, het toestel activeren, een traject selecteren en starten. Dit loopt tot het moment waarop de gebruiker effectief “vertrekt”.
+- **Test 2:** In het tweede deel wordt een realistisch gebruiksscenario nagebootst. Deelnemers krijgen eerst een korte briefing over het toestel en doorlopen daarna de volledige flow alsof ze op pad gaan: het toestel opbergen, zich voorbereiden met hulpmiddelen, het toestel activeren, een traject selecteren en starten. Dit loopt tot het moment waarop de gebruiker effectief “vertrekt”.
 
 <p align="center">
   <img src="../img/Dev_2_T1.jpg" width="75%">
+  <br>
+  <em>Develop 2 greep analyse.</em>
 </p>
 
 Voor de testen werden een protocol en rapport opgesteld:
@@ -348,6 +350,8 @@ CMF (Color, Material, Finish) en marktpositie: onderzoeken welke kleuren, materi
 
 <p align="center">
   <img src="../img/IMG20260521102232.jpg" width="75%">
+  <br>
+  <em>CMF refentieproducten.</em>
 </p>
 
 Voor het CMF-onderzoek kregen respondenten verschillende referentieproducten (zoals scheerapparaten, controllers en tandenborstels) in willekeurige volgorde in handen. Ze werden bevraagd over onder andere:
@@ -374,7 +378,9 @@ Afwerking: een satijnen afwerking kreeg de voorkeur. Glossy oppervlakken werden 
 De respondenten zagen potentieel in SHERPA en zouden overwegen het te kopen als het een afgewerkt product was. Een mogelijke terugbetaling als medisch hulpmiddel zou de aantrekkelijkheid verhogen, terwijl een verplicht abonnement voor updates eerder negatief werd beoordeeld. Daarnaast kwam de vraag naar voren wie aansprakelijk is bij ongevallen tijdens het gebruik, dit vraagt verder juridisch onderzoek .
 
 <p align="center">
-  <img src="../img/Dev_3_StakeholderMap.png" width="75%">
+  <img src="../img/Dev_3_StakeholderMap.png" width="50%">
+  <br>
+  <em>Stakeholderkaart </em>
 </p>
 
 **Producenten**
@@ -408,6 +414,8 @@ Dirk gaf aan dat hij graag zelfstandig naar het zwembad zou gaan. Het traject tu
 
 <p align="center">
   <img src="../img/Traject_Dirk.png" width="75%">
+  <br>
+  <em>Traject Kortrijk Weide Lago</em>
 </p>
 
 **Traject Chris — Gullegem**
@@ -428,6 +436,8 @@ Het systeem gaf trilsignalen bij het bereiken van herkenningspunten. Gesproken i
 
 <p align="center">
   <img src="../img/Dev_3_Proto.jpg" width="75%">
+  <br>
+  <em>Gebruikt prototype finale test</em>
 </p>
 
 ---
@@ -473,6 +483,8 @@ De trajecten werden uitgestippeld op basis van Google Earth en lokale kennis. De
 
 <p align="center">
   <img src="../img/Dev3_Finale_Test.jpg" width="75%">
+  <br>
+  <em>Debrief</em>
 </p>
 
 Een deelnemer gaf spontaan aan geïnteresseerd te zijn in het toestel voor dagelijks gebruik. Een andere deelnemer merkte op dat de wijzer soms onduidelijk bewoog, wat te wijten is aan inconsistente manuele besturing door de onderzoeker.
