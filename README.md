@@ -53,7 +53,10 @@ Toch moeten we kritisch zijn op onze validatie in de laatste fase. De Wizard of 
 
 Daarnaast is onze testgroep (N=4) vrij homogeen gebleven. Onze respondenten, zoals Pieter-Jan, zijn al erg zelfstandig en mobiel. Hierdoor bestaat het risico dat we een oplossing hebben ontworpen voor een ‘best-case scenario’. Het is voor ons een belangrijk werkpunt om in de toekomst te testen met mensen die onzekerder zijn in het verkeer, om te zien of het ‘Record & Replay’-concept hen ook voldoende vertrouwen biedt.
 ##### Semester 2 
+Aan het einde van de definitiefase werd geconcludeerd dat ons product zich meer moet focussen op blinden en slechtzienden die minder kapabel en zelfredzaam zijn. Jammer genoeg zijn dit ook de mensen die het moeilijkst te bereiken zijn en het minst enthousiast om mee te werken. Hierdoor is het ons niet gelukt om dit soort mensen aan te spreken.
 De input van mensen uit de doelgroep kan niet onderschat worden. Op het einde van het project zijn we contact verloren met een paar mensen van onze doorgroep. Dit was zeer nadelig voor zowel onderzoek als het maken van designbeslissingen.
+De einddoelen van het project zijn ook gelaas niet volledig gehaald. Tijdens de finaletest bleken er toch wat onnauwkeurigheden naar boven te komen, vooral bij de GPS. Het product heeft een goede start, maar is nog lang niet klaar om op de markt te komen.  
+Door dit project hebben we wel de kans gekregen om in een nieuwe wereld te stappen en toffe mensen te ontmoeten. Het heeft ons ook attenter gemaakt op hoe de wereld zich aanpast en gedraagt tegenover de blinde en slechtziende bevolkingsgroep.
 
 ## Noot inzake het gebruik van AI
 Binnen dit project is Gemini ingezet als ondersteunende AI-tool, met een strikt afgebakende rol:
