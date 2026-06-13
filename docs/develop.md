@@ -218,12 +218,13 @@ Alle bevindingen werden gebundeld in een onderzoeksrapport:
 
 ## User Testing
 
-De testen bestaan uit twee delen.
+De test bestaat uit twee delen die de interactie van de gebruiker met het toestel onderzoeken: een fysieke interactietest rond grip en houding, en een scenario-gebaseerde test waarbij de een deel van de gebruikersflow wordt nagebootst.
 
 ### Testopzet
 
-- **Test 1:** spontane interactie + rangschikking op comfort
-- **Test 2:** gesimuleerd gebruik in een scenario met observatie
+- **Test 1:** In het eerste deel wordt de houding en greep van de gebruiker onderzocht. De testpersonen staan recht en krijgen verschillende prototypes één voor één aangereikt. Ze verkennen de grip intuïtief en rangschikken de prototypes vervolgens van minst naar meest comfortabel, waarbij ze hun keuze toelichten.
+
+- **Test 2:** n het tweede deel wordt een realistisch gebruiksscenario nagebootst. Deelnemers krijgen eerst een korte briefing over het toestel en doorlopen daarna de volledige flow alsof ze op pad gaan: het toestel opbergen, zich voorbereiden met hulpmiddelen, het toestel activeren, een traject selecteren en starten. Dit loopt tot het moment waarop de gebruiker effectief “vertrekt”.
 
 <p align="center">
   <img src="../img/Dev_2_T1.jpg" width="75%">
