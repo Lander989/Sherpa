@@ -35,9 +35,10 @@ Een cruciale randvoorwaarde is dat de oplossing functioneert als aanvulling op d
 1. [Methodologie](./docs/methodologie.md)
 2. [Discovery](./docs/discovery.md)
 3. [Defintion](./docs/definition.md)
-4. [develop](./docs/develop.md)
-5. [Bill of materials](./docs/bom.md)
-6. [Design Requirements](./docs/design_requirements.md)
+4. [Develop](./docs/develop.md)
+5. [Opkomende Technologie](./docs/Opkomende%20Technologieën.md)
+6. [Bill of materials](./docs/bom.md)
+7. [Design Requirements](./docs/design_requirements.md)
 ## Kritische reflectie
 Semester 1:
 
