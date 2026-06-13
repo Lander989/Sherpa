@@ -230,7 +230,7 @@ De test bestaat uit twee delen die de interactie van de gebruiker met het toeste
 Voor de testen werden een protocol en rapport opgesteld:
 
 - [Protocol](<../reports and protocols/protocol_develop_2.pdf>)
-- [Rapport](<../>)
+- [Rapport](<../reports and protocols/Rapport_develop_2.pdf>)
 
 ---
 
