@@ -4,4 +4,4 @@ In de map `cad` vind je zowel het ZIP-archief van ons project met de originele P
 
 ### Beschikbare bestanden:
 * **Compleet CAD-model:** [SHERPA assembly](./PRT/Sherpa_Final.zip)
-* **3D-printen:** [STL-bestanden](./cad/)
+* **3D-printen:** [STL-bestanden](./cad)
