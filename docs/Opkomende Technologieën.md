@@ -133,6 +133,11 @@ Het werkende prototype werd in een afgewerkte behuizing ingebouwd. Hiermee hebbe
   <em>Afgewerkte behuizing van het prototype.</em>
 </p>
 
+## Code
+
+Hier is de finale code: [GPS_IMU_TEST_V3_ESP32](https://github.com/Lander989/Sherpa/blob/main/src/Opkomende%20Technelogie%C3%ABn/GPS_IMU_TEST_V3_ESP32/GPS_IMU_TEST_V3_ESP32.ino)
+
+
 ## Kritische reflectie
 
 Tijdens de finale test bleken er toch wat onnauwkeurigheden naar boven te komen, vooral bij de GPS, die maar accuraat is tot op 2 meter. Dit bracht vervelende situaties met zich mee, aangezien de punten die op Google Earth nog op het wandelpad lagen, zich tijdens de test soms in een gebouw of in de struiken bevonden.

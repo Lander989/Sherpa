@@ -211,9 +211,6 @@ Om het ontwerpproces te ondersteunen, werden de prototypes gebaseerd op bestaand
 6. Validatie via kleimodellen
 7. Uitwerken van prototypes voor testing
 
-Alle bevindingen werden gebundeld in een onderzoeksrapport:  
-[Ergonomie_rapport](<../>)
-
 ---
 
 ## User Testing
@@ -334,27 +331,50 @@ Deelnemers gingen opmerkelijk voorzichtig om met de prototypes.
 | D5.7 | Het toestel past in een broekzak. |
 | D5.8 | De gebruiker heeft vertrouwen dat het toestel niet uit de hand kan vallen tijdens gebruik. |
 
+# Develop 3 (N = 2)
 
-## Develop 3 (N = 2)
+## Inleinding 
+Dit is de eindfase van dit ontwerpproces. In deze fase wordt de CMF onderzocht en toegepast op het product. Daarnaast wordt ook kort eens gekeken naar de marktplaats van SHERPA. Als laatste wordt ook nog een finale test uitgevoerd om te kijken hoe het product in de echte wereld presteert. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
 
-### Inleiding
+- [Protocol Develop 3](<../>)
+- [Rapport Develop 3](<../>)
 
-In deze fase worden twee onderdelen onderzocht. Het eerste deel gaat in op CMF en de marktpositie van het product. Het tweede deel is een overkoepelende praktijktest waarbij het volledige systeem in een realistische omgeving wordt geëvalueerd.
+### Deel 1 CMF onderzoek 
+Het voledige onderzoek is te lezen in het protocol en rapport van deze fase.
+
+##### Doel van het onderzoek
+
+CMF (Color, Material, Finish) en marktpositie: onderzoeken welke kleuren, materialen en afwerkingen het meest geschikt zijn en hoe potentiële gebruikers het product in de markt zien.
+
+<p align="center">
+  <img src="../img/IMG20260521102232.jpg" width="75%">
+</p>
+
+Voor het CMF-onderzoek kregen respondenten verschillende referentieproducten (zoals scheerapparaten, controllers en tandenborstels) in willekeurige volgorde in handen. Ze werden bevraagd over onder andere:
+
+* comfort en grip
+* materiaalgevoel
+* herkenbaarheid van knoppen
+* kleurcontrast
+* geschiktheid voor langdurig gebruik
+* Belangrijkste bevindingen
+
+Uit de interviews kwamen de volgende conclusies naar voren:
+
+Vormgeving: de vorm moet intuïtief aangeven hoe het product vastgehouden moet worden. De richting van de wijzer moet duidelijk zijn en knoppen moeten gemakkelijk voelbaar en herkenbaar zijn door reliëf of een afwijkende vorm.
+Kleurgebruik: kleur moet een functionele rol spelen, bijvoorbeeld om knoppen beter zichtbaar te maken en het product gemakkelijker terug te vinden voor slechtziende gebruikers. Hoog contrast wordt als belangrijk beschouwd.
+Materiaal: omdat het product buiten gebruikt wordt en schokken moet kunnen weerstaan, zijn sterke en impactbestendige materialen gewenst. Een combinatie van een harde kern met een rubberachtige buitenlaag werd door respondenten als comfortabel en praktisch ervaren.
+Afwerking: een satijnen afwerking kreeg de voorkeur. Glossy oppervlakken werden als glad ervaren en matte oppervlakken zouden sneller vuil worden. Gladde knoppen werden positief beoordeeld.
+
+##### Marktpositie
+
+De respondenten zagen potentieel in SHERPA en zouden overwegen het te kopen als het een afgewerkt product was. Een mogelijke terugbetaling als medisch hulpmiddel zou de aantrekkelijkheid verhogen, terwijl een verplicht abonnement voor updates eerder negatief werd beoordeeld. Daarnaast kwam de vraag naar voren wie aansprakelijk is bij ongevallen tijdens het gebruik, dit vraagt verder juridisch onderzoek .
 
 ---
 
-### Onderzoeksvragen
 
-**CMF & marktpositie**
-- Hoe ziet de afwerking van het product eruit in termen van kleur, materiaal en afwerking?
-- Hoe wordt het product gepositioneerd — als herkend hulpmiddel of als gadget?
-- Hoeveel wil een gebruiker betalen?
-- Wat is de mening van de doelgroep over het sociaal comfort van het product?
 
-**Overkoepelende praktijktest**
-- Hoe presteert het product in de praktijk, met de variabelen en onzekerheden van een echte omgeving?
-
----
+###  Deel 2 - Overkoepelende test
 
 ### Testomgeving en setup
 
