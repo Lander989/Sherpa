@@ -199,7 +199,9 @@ De onderzoeksvragen zijn opnieuw gebaseerd op de design requirements:
 
 ## Vooronderzoek ergonomie en verloop
 
-Om het ontwerpproces te ondersteunen, werden de prototypes gebaseerd op bestaande producten en onderzoek.
+Om het ontwerpproces te ondersteunen, werden de prototypes gebaseerd op bestaande producten en onderzoek. Het volledige ergonomie onderzoek is hier te lezen: 
+
+- [Ergonomie](<../reports and protocols/onderzoek_develop_2.pdf>)
 
 ### Aanpak
 
