@@ -60,6 +60,11 @@ Elke requirement is opgesteld in de vorm 'Het systeem / De gebruiker [doet X]' e
 | 5.4 | Develop 1 | Trilpatronen sluiten aan bij vertrouwde tactiele semantiek van blindengeleidetegels (kort=stop, lang=ga). | Likert 1–7 'De trilpatronen voelden vertrouwd aan.' ≥ 4,5/7 gemiddeld. | Should have | Perceived |
 | 5.5 | Definition wave 1 | Het systeem is bruikbaar na een enkele uitlegsessie van ≤ 20 minuten. | Na een introductiefase van max. 20 min voltooit de deelnemer het testparcours met ≤ 2 begeleidersinterventies. | Should have | Observed |
 | 5.6 | Develop 1 | De tactiele richtingaanwijzer bevindt zich op een positie die een neutrale, ontspannen polshouding toelaat. | ≥ 3 van 5 deelnemers nemen direct een neutrale polshouding aan bij eerste aanraking (observatie, geen aanwijzing). | Should have | Observed |
+| 5.7 | Develop 2 | Het toestel past in een broekzak. | ≥ 4 van 5 deelnemers steekt het toestel zonder problemen weg. | Could have | Observed |
+| 5.8 | Develop 1 | Het systeem ondersteunt elke essentiële stap (opstart, trajectkeuze, navigatie, herkenningspunt, stop) met gesproken instructie. | Alle essentiële stappen worden door het systeem ondersteund met gesproken instructie; gecontroleerd via walkthrough van het volledige parcours. | Must have | Observed |
+| 5.9 | Develop 2 | De gebruiker heeft vertrouwen dat het toestel niet uit de hand kan vallen tijdens gebruik. | Minstens 90% van de gebruikers rapporteert een gevoel van zekerheid tijdens het vasthouden én geen enkele gebruiker laat het toestel vallen tijdens de gebruikstest. | Should have | Observed / Perceived |
+
+
 
 ---
 
